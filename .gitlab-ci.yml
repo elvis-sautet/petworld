@@ -1,0 +1,16 @@
+before-script:
+  ##Setup SSH deploy keys
+  - 'which ssh-agent || (apt-get install -qq openssh-client)'
+  - eval $(ssh-agent -s)
+  - ssh-add  <(echo "$SSH_PRIVATE_KEY")
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+deploy_staging:
+  type: deploy
+  environment:
+    name: production
+  script:
+    - ssh embugua2009@104.196.1.92 "cd petworld/petworld && git checkout production && git pull origin production && exit"
+  only:
+    - production
