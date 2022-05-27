@@ -4,7 +4,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 function Banner() {
   // read the images from the src/images folder
   const images = [
-    require("../images/Best-Pet-Food-Kenya-Petsasa.webp"),
+    require("../images/bannerp.gif"),
+    require("../images/bannerpz.png"),
     // require("../images/Kitten-Shop.webp"),
     require("../images/Parasiticide-For-Cats-And-Dogs-Kenya.webp"),
     // require("../images/Puppy-Shop.webp"),
