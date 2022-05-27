@@ -58,7 +58,8 @@ function Product(props) {
             />
           ))}
       </div>
-      <Link to={`/product/${props.id}`}>
+      {/* TODO:change the id */}
+      <Link to={`/home/product/test-id`}>
         <p className="text-black line-clamp-1 text-[16px]  tracking-wide mt-1">
           {props.productName}
         </p>

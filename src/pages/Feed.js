@@ -15,8 +15,8 @@ function Feed() {
         <Banner />
       </div>
       {/* display first 3 products */}
-      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 grid-flow-row-dense md:grid-cols-3 lg:grid-cols-5 w-full -mt-8 px-4">
-        {products?.slice(0, 5).map((product) => (
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 grid-flow-row-dense md:grid-cols-3 lg:grid-cols-4 w-full -mt-8 px-4">
+        {products?.slice(0, 4).map((product) => (
           <Product key={product.id} {...product} />
         ))}
       </div>
