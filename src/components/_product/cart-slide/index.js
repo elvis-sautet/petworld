@@ -7,7 +7,7 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 
 // create a previous arrow
 const PrevArrow = (props) => {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
   return (
     <div
       style={{

@@ -126,7 +126,7 @@ function CommandPallete() {
               //when user selects a product, redirect to the /product/:id page
               dispatch({ type: CLOSE_COMMAND_PALLETE });
               // navigate(`/product/${project._id}`);
-              navigate(`product/test-id`);
+              navigate(`product/${project.id}`);
             }}
           >
             <div className="flex items-center px-4">

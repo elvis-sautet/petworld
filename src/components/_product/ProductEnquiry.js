@@ -1,210 +1,102 @@
-import React, { useContext, useEffect, useMemo, useState } from "react";
-import { Navigate, useParams } from "react-router-dom";
+import React, { useEffect, useMemo, useState } from "react";
+import { useLocation, useParams } from "react-router-dom";
 import Product from "../../components/_product/Product";
 import { Icon } from "@iconify/react";
 import AddRoundedIcon from "@mui/icons-material/AddRounded";
 import RemoveRoundedIcon from "@mui/icons-material/RemoveRounded";
-import { v4 as uuidv4 } from "uuid";
 import Page from "../Page";
+import { useDispatch, useSelector } from "react-redux";
+import { ADD_TO_CART } from "../../actions/types";
+import { CircularProgress } from "@mui/material";
+import {
+  numberWithCommas,
+  calculateDiscountPercantage,
+  convertToNumber,
+} from "../../utils/productUtils";
 
 function ProductItem() {
-  const [notFound, setNotFound] = useState(false);
+  const dispatch = useDispatch();
+  const [ErrorFound, setErrorFound] = React.useState("");
+
+  // scroll to top
+  const { pathname } = useLocation();
+
+  // function to scroll to top when page is loaded
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  const [imageIndex, setImageIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
+  const { products, error, loading } = useSelector((state) => state?.products);
 
-  //state of the image shown
-  const [imageIndex, setImageIndex] = useState(0);
+  //functionality of finding the product using the id when the page loads
+  const productFound = useMemo(() => {
+    // set the error to null
+    setErrorFound("");
+    // check to see the products
+    if (products?.length > 0) {
+      // find the product using the id
+      const product = products?.find((product) => product?.id === id);
+      console.log(product);
+      // if the product is found
+      if (product !== undefined && product !== null && product !== "") {
+        setErrorFound("");
+        // add the product image once to the images array so that the image can be displayed
+        const productImage = product.productGallery?.productImage;
+        const productImages = product?.productGallery?.productImages;
+        console.log(productImages);
+        // add the product image to the images array at the beginning
+        const images = [productImage, ...productImages];
 
-  //functionality of finding the product using useMemo so that we can avoid the performance issue
-  const productFound = {
-    id: "test-id",
-    productName: "Reflex Kitten Food -Chicken & Rice 2kg",
-    productPrice: {
-      salePrice: "1740",
-      regularPrice: "1840",
-    },
-    productGallery: {
-      productImage:
-        "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/60/911385/1.jpg?0643",
-      productImages: [
-        "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/60/911385/1.jpg?0643",
-        "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/13/292875/1.jpg?2843",
-      ],
-    },
-    productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
-    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
-    productCategory: {
-      categoryName: "Food",
-      subCategoryName: "Cat Food",
-    },
-    productBrand: "Reflex",
-    // productStock is the product quantity in stock or the original quantity.
-    productStock: "10",
-    // quantity of items left in stock
-    productsLeftInStock: "6",
-    productDetails: {
-      productReviews: [
-        {
-          reviewId: uuidv4(),
-          fullName: "John Doe",
-          review: "This is a review",
-          rating: "5",
-          date: "2020-01-01",
-        },
-      ],
-      productSpecifications: [
-        {
-          specificationId: uuidv4(),
-          specificationName: "Weight",
-          specificationValue: "2kg",
-        },
-        {
-          specificationId: uuidv4(),
-          specificationName: "Size",
-          specificationValue: "2kg",
-        },
-      ],
-      productLikes: [
-        {
-          likeId: uuidv4(),
-          fullName: "John Doe",
-        },
-      ],
-    },
-    // product rating between 1 to 5
-  };
+        return {
+          ...product,
+          productGallery: {
+            ...product.productGallery,
+            productImages: images,
+          },
+        };
+      } else {
+        // if the product is not found
+        setErrorFound("Product not found");
+        return null;
+      }
+    }
+  }, [products, id]);
 
   //if we have no product then we have to redirect to the home page check if the product found is null or undefined
-  if (!productFound) {
-    //show loading for 3 seconds
-    setTimeout(() => {
-      if (notFound) {
-        return <Navigate to="/not-found" />;
-      }
-    }, 3000);
-    return <p>loading</p>;
+  if (
+    productFound === null ||
+    productFound === undefined ||
+    ErrorFound === "Product not found"
+  ) {
+    return (
+      <Page title="Product Not Found">
+        <div className="lg:px-10 sm:px-3">
+          <h2>Opps, the product you are looking for is not found</h2>
+          <div>
+            <p>page will redirect to the home page in 3 seconds</p>
+          </div>
+        </div>
+      </Page>
+    );
   }
 
   //other products you may also like, this are products that are not the same as the product we are looking at but are similar to it based on product
 
-  //similar products algorithm
-  const similarProducts = [
-    {
-      id: uuidv4(),
-      productName: "Reflex Kitten Food -Chicken & Rice 2kg",
-      productPrice: {
-        salePrice: "1740",
-        regularPrice: "1840",
-      },
-      productGallery: {
-        productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/60/911385/1.jpg?0643",
+  // //similar products algorithm
+  const similarProducts = products.filter(
+    (product) => product.categoryName === productFound.categoryName
+  );
 
-        productImages: [],
-      },
-      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
-    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
-      productCategory: {
-        categoryName: "Food",
-        subCategoryName: "Cat Food",
-      },
-      productBrand: "Reflex",
-      // productStock is the product quantity in stock or the original quantity.
-      productStock: "10",
-      // quantity of items left in stock
-      productsLeftInStock: "6",
-      productDetails: {
-        productReviews: [
-          {
-            reviewId: uuidv4(),
-            fullName: "John Doe",
-            review: "This is a review",
-            rating: "5",
-            date: "2020-01-01",
-          },
-        ],
-        productSpecifications: [
-          {
-            specificationId: uuidv4(),
-            specificationName: "Weight",
-            specificationValue: "2kg",
-          },
-          {
-            specificationId: uuidv4(),
-            specificationName: "Size",
-            specificationValue: "2kg",
-          },
-        ],
-        productLikes: [
-          {
-            likeId: uuidv4(),
-            fullName: "John Doe",
-          },
-        ],
-      },
-      // product rating between 1 to 5
-    },
-    {
-      id: uuidv4(),
-      productName: "Reflex Kitten Food -Chicken & Rice 2kg",
-      productPrice: {
-        salePrice: "1740",
-        regularPrice: "1840",
-      },
-      productGallery: {
-        productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/60/911385/1.jpg?0643",
-        productImages: [],
-      },
-      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
-    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
-      productCategory: {
-        categoryName: "Food",
-        subCategoryName: "Cat Food",
-      },
-      productBrand: "Reflex",
-      // productStock is the product quantity in stock or the original quantity.
-      productStock: "10",
-      // quantity of items left in stock
-      productsLeftInStock: "6",
-      productDetails: {
-        productReviews: [
-          {
-            reviewId: uuidv4(),
-            fullName: "John Doe",
-            review: "This is a review",
-            rating: "5",
-            date: "2020-01-01",
-          },
-        ],
-        productSpecifications: [
-          {
-            specificationId: uuidv4(),
-            specificationName: "Weight",
-            specificationValue: "2kg",
-          },
-          {
-            specificationId: uuidv4(),
-            specificationName: "Size",
-            specificationValue: "2kg",
-          },
-        ],
-        productLikes: [
-          {
-            likeId: uuidv4(),
-            fullName: "John Doe",
-          },
-        ],
-      },
-      // product rating between 1 to 5
-    },
-  ];
+  // console.log("similarProducts", similarProducts);
 
   const similarProductsArray = similarProducts.filter(
     (product) => productFound.id !== product.id
   );
 
-  // similar array without repeating the same product
+  // // similar array without repeating the same product
   const similarProductsArrayUnique = similarProductsArray.filter(
     (product, index) =>
       similarProductsArray.findIndex((p) => p.id === product.id) === index
@@ -224,6 +116,37 @@ function ProductItem() {
         return pre - 1;
       });
     }
+  }
+
+  // function to add to cart
+  const addToCart = (product) => {
+    const cartItem = {
+      ...product,
+      quantity,
+    };
+    dispatch({
+      type: ADD_TO_CART,
+      payload: cartItem,
+    });
+    // reset the quantity
+    setQuantity(1);
+  };
+
+  // if loading is true then we have to show the loading icon
+  if (loading) {
+    return (
+      <Page title={`Product ${id} Loading`}>
+        <div className="lg:px-10 sm:px-3">
+          <div
+            className="!w-full
+          !mt-10 !flex !justify-center
+          !items-center"
+          >
+            <CircularProgress />
+          </div>
+        </div>
+      </Page>
+    );
   }
 
   return (
@@ -275,10 +198,20 @@ function ProductItem() {
               {/* product price */}
               <div className="text-slate-600 text-sm font-semibold mt-2">
                 <div className="flex space-x-2">
-                  <p>{productFound?.productPrice?.salePrice}</p>
+                  <p className="text-black text-md">
+                    KSH{" "}
+                    <span>
+                      {numberWithCommas(productFound?.productPrice?.salePrice)}
+                    </span>
+                  </p>
                   <span>-</span>
-                  <p className="line-through text-dune/70">
-                    {productFound?.productPrice?.regularPrice}
+                  <p className="line-through text-dune/70 text-slate-500 text-md">
+                    KSH{" "}
+                    <span>
+                      {numberWithCommas(
+                        productFound?.productPrice?.regularPrice
+                      )}
+                    </span>
                   </p>
                 </div>
               </div>
@@ -295,7 +228,7 @@ function ProductItem() {
               {/* add to cart */}
               <div className="w-full mt-2">
                 <button
-                  //   onClick={() => addToCart(productFound)}
+                  onClick={() => addToCart(productFound)}
                   className="bg-secondary-main/90 rounded-sm flex space-x-2 items-center text-sm text-center justify-center w-full border h-10  text-white font-semibold tracking-wide py-2 border-secondary-main hover:bg-secondary-main hover:text-white"
                 >
                   Add to cart
