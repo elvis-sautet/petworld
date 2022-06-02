@@ -11,10 +11,25 @@ const initialState = {
 export default function (state = initialState, action) {
   switch (action.type) {
     case ADD_TO_CART:
+      //check if the item is already in the cart
+      const itemInCart = state.cartItems.find(
+        (item) => item.id === action.payload.id
+      );
+      //if the item is already in the cart then just update the quantity
+      if (itemInCart) {
+        return {
+          ...state,
+          cartItems: state.cartItems.map((item) =>
+            item.id === action.payload.id
+              ? { ...item, quantity: item.quantity + action.payload.quantity }
+              : item
+          ),
+        };
+      }
+      //if the item is not in the cart then add it to the cart
       return {
         ...state,
         cartItems: [...state.cartItems, action.payload],
-        cartItemsLength: state.cartItemsLength + 1,
       };
     case REMOVE_FROM_CART:
       return {

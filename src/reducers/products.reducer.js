@@ -2,8 +2,21 @@ import {
   FETCH_PRODUCTS_SUCCESS,
   FETCH_PRODUCTS_FAILURE,
   CLEAN_PRODUCTS,
+  FETCH_VIEWED_PRODUCTS_SUCCESS,
+  FETCH_VIEWED_PRODUCTS_FAILURE,
+  ADD_NEW_VIEWED_PRODUCT_SUCCESS,
 } from "../actions/types";
 import { v4 as uuidv4 } from "uuid";
+
+export const LOCAL_STORAGE_CACHED_DATABASE = "viewedProducts";
+// an async function that returns fetches all the viewed products from the local storage
+// if the local storage 'viewedProducts' is empty then it returns an empty array, if the local storage is not empty then it returns the array of viewed products
+async function getViewedProducts() {
+  const viewedProducts = await JSON.parse(
+    localStorage.getItem(LOCAL_STORAGE_CACHED_DATABASE)
+  );
+  return viewedProducts || [];
+}
 
 const initialState = {
   products: [
@@ -1588,6 +1601,8 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
   productsLength: 0,
   error: null,
   loading: false,
+  // viewed products, these are the products that are the user has viewed and has been cached in the browser
+  viewedProducts: [],
 };
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -1615,6 +1630,27 @@ export default function (state = initialState, action) {
         error: null,
         loading: false,
       };
+    case FETCH_VIEWED_PRODUCTS_SUCCESS:
+      return {
+        ...state,
+        viewedProducts: action.payload,
+        error: null,
+        loading: false,
+      };
+    case FETCH_VIEWED_PRODUCTS_FAILURE:
+      return {
+        ...state,
+        error: action.payload,
+        loading: false,
+      };
+    case ADD_NEW_VIEWED_PRODUCT_SUCCESS:
+      return {
+        ...state,
+        viewedProducts: action.payload,
+        error: null,
+        loading: false,
+      };
+
     default:
       return state;
   }

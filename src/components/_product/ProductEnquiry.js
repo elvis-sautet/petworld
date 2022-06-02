@@ -7,29 +7,70 @@ import RemoveRoundedIcon from "@mui/icons-material/RemoveRounded";
 import Page from "../Page";
 import { useDispatch, useSelector } from "react-redux";
 import { ADD_TO_CART } from "../../actions/types";
+import { enqueueSnackbar } from "../../actions/enqueueSnackbar.action";
 import { CircularProgress } from "@mui/material";
-import {
-  numberWithCommas,
-  calculateDiscountPercantage,
-  convertToNumber,
-} from "../../utils/productUtils";
+import { numberWithCommas } from "../../utils/productUtils";
+import SimilarProductsSlide from "./related-products-slide";
+import CustomersAlsoSearched from "./customers-also-searched";
+import YouMayAlsoLike from "./you-may-also-like";
+import { LOCAL_STORAGE_CACHED_DATABASE } from "../../reducers/products.reducer";
 
 function ProductItem() {
   const dispatch = useDispatch();
   const [ErrorFound, setErrorFound] = React.useState("");
-
+  const [imageIndex, setImageIndex] = useState(0);
+  const [quantity, setQuantity] = useState(1);
+  const { id } = useParams();
+  const { products, error, loading, viewedProducts } = useSelector(
+    (state) => state?.products
+  );
   // scroll to top
   const { pathname } = useLocation();
 
   // function to scroll to top when page is loaded
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [pathname]);
+  }, [id]);
 
-  const [imageIndex, setImageIndex] = useState(0);
-  const [quantity, setQuantity] = useState(1);
-  const { id } = useParams();
-  const { products, error, loading } = useSelector((state) => state?.products);
+  // when this page is loaded, create get the cached database from local storage
+  // and set it to the viewed products
+  useEffect(() => {
+    (async () => {
+      const localStorageCachedDatabase = await localStorage.getItem(
+        LOCAL_STORAGE_CACHED_DATABASE
+      );
+
+      // if the local storage database is not created yet, create it and set it to the viewed products
+      if (
+        localStorageCachedDatabase === null ||
+        localStorageCachedDatabase === undefined
+      ) {
+        console.log("local storage database is not created yet");
+        console.log(
+          "....................creating local storage database...................."
+        );
+        localStorage.setItem(LOCAL_STORAGE_CACHED_DATABASE, JSON.stringify([]));
+      } else {
+        //if we have the database cached, get it and set it to the viewed products
+        const cachedData = await localStorage.getItem(
+          LOCAL_STORAGE_CACHED_DATABASE
+        );
+        // const cachedDataParsed = JSON.parse(cachedData);
+        // console.log("cachedDataParsed", cachedDataParsed);
+
+        // if the cached data is not empty, set it to the viewed products in the redux store
+        if (cachedData.length > 0) {
+          dispatch({
+            type: ADD_TO_CART,
+            payload: JSON.parse(cachedData),
+          });
+        }
+
+        console.log("fetched cached | user viewed products", cachedData);
+      }
+    })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   //functionality of finding the product using the id when the page loads
   const productFound = useMemo(() => {
@@ -39,16 +80,18 @@ function ProductItem() {
     if (products?.length > 0) {
       // find the product using the id
       const product = products?.find((product) => product?.id === id);
-      console.log(product);
       // if the product is found
       if (product !== undefined && product !== null && product !== "") {
         setErrorFound("");
         // add the product image once to the images array so that the image can be displayed
         const productImage = product.productGallery?.productImage;
         const productImages = product?.productGallery?.productImages;
-        console.log(productImages);
         // add the product image to the images array at the beginning
         const images = [productImage, ...productImages];
+
+        // product viewed
+        // get this product id
+        const productId = product?.id;
 
         return {
           ...product,
@@ -90,8 +133,6 @@ function ProductItem() {
     (product) => product.categoryName === productFound.categoryName
   );
 
-  // console.log("similarProducts", similarProducts);
-
   const similarProductsArray = similarProducts.filter(
     (product) => productFound.id !== product.id
   );
@@ -121,16 +162,29 @@ function ProductItem() {
   // function to add to cart
   const addToCart = (product) => {
     const cartItem = {
-      ...product,
       quantity,
+      ...product,
     };
     dispatch({
       type: ADD_TO_CART,
       payload: cartItem,
     });
+    // dispach a snackbar
+    dispatch(
+      enqueueSnackbar({
+        message: `product added to cart`,
+        options: {
+          key: new Date().getTime() + Math.random(),
+          variant: "success",
+        },
+      })
+    );
+
     // reset the quantity
     setQuantity(1);
   };
+
+  // function to get all the product viewed on this page
 
   // if loading is true then we have to show the loading icon
   if (loading) {
@@ -288,16 +342,16 @@ function ProductItem() {
           {similarProductsArray.length > 0 && (
             <div className="mt-5 bg-white  p-3">
               <div className="relative text-center max-w-max">
-                <h3 className="text-black capitalize tracking-wide font-semibold mb-4 lg:text-lg">
+                <h3 className="text-black capitalize tracking-wide font-semibold mb-4 lg:text-[20px]">
                   Related Products
                 </h3>
                 {/* a small line */}
                 <div className="w-16 rounded-full text-center  h-1  bg-secondary-main absolute -bottom-1 -pt-3"></div>
               </div>
-              <div className="grid gap-2 grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 transition-all ease-in-out duration-200">
-                {similarProductsArrayUnique.map((product) => (
-                  <Product key={product._id} {...product} />
-                ))}
+              <div>
+                <SimilarProductsSlide
+                  similarProductsArray={similarProductsArrayUnique}
+                />
               </div>
             </div>
           )}
@@ -306,16 +360,16 @@ function ProductItem() {
           {similarProductsArray.length > 0 && (
             <div className="mt-5 bg-white  p-3">
               <div className="relative text-center max-w-max">
-                <h3 className="text-black capitalize tracking-wide font-semibold mb-4 lg:text-lg">
+                <h3 className="text-black capitalize tracking-wide font-semibold mb-4 lg:text-[20px]">
                   Customers who viewed this also viewed
                 </h3>
                 {/* a small line */}
                 <div className="w-16 rounded-full text-center  h-1  bg-secondary-main absolute -bottom-1 -pt-3"></div>
               </div>
-              <div className="grid gap-2 grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 transition-all ease-in-out duration-200">
-                {similarProductsArrayUnique.map((product) => (
-                  <Product key={product._id} {...product} />
-                ))}
+              <div>
+                <CustomersAlsoSearched
+                  similarProductsArray={similarProductsArrayUnique}
+                />
               </div>
             </div>
           )}
@@ -324,16 +378,16 @@ function ProductItem() {
           {similarProductsArray.length > 0 && (
             <div className="mt-5 bg-white  p-3">
               <div className="relative text-center max-w-max">
-                <h3 className="text-black capitalize tracking-wide font-semibold mb-4 lg:text-lg">
+                <h3 className="text-black capitalize tracking-wide font-semibold mb-4 lg:text-[20px]">
                   You may also like
                 </h3>
                 {/* a small line */}
                 <div className="w-16 rounded-full text-center  h-1  bg-secondary-main absolute -bottom-1 -pt-3"></div>
               </div>
-              <div className="grid gap-2 grid-cols-2 sm:grid-cols-3 xl:grid-cols-5 transition-all ease-in-out duration-200">
-                {similarProductsArrayUnique.map((product) => (
-                  <Product key={product._id} {...product} />
-                ))}
+              <div>
+                <YouMayAlsoLike
+                  similarProductsArray={similarProductsArrayUnique}
+                />
               </div>
             </div>
           )}

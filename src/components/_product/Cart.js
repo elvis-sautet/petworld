@@ -2,45 +2,30 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import { numberWithCommas } from "../../utils/productUtils";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { ADD_TO_CART, REMOVE_FROM_CART, CLEAN_CART } from "../../actions/types";
 import { MinusIcon, PlusIcon } from "@heroicons/react/solid";
 import { v4 as uuidv4 } from "uuid";
 import CartSlider from "./cart-slide";
+import {
+  Button,
+  Dialog,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+} from "@mui/material";
+import Iconify from "../../components/Iconify";
 
 function Cart() {
+  const [showModal, setShowModal] = React.useState(false);
   const dispatch = useDispatch();
   // sample cart items
-  const cartItems = [
-    {
-      id: 1,
-      productName:
-        "Tecno Obsidian Black POVA NEO, 64GB ROM + 4GB RAM, 6.8'', 6000mAh",
-      productGallery: {
-        image:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/60/911385/1.jpg?0643",
-      },
-      productPrice: {
-        regularPrice: "10000",
-        salePrice: "9000",
-      },
-      quantity: 1,
-    },
-    {
-      id: 2,
-      productName:
-        "Tecno Obsidian Black POVA NEO, 64GB ROM + 4GB RAM, 6.8'', 6000mAh",
-      productGallery: {
-        image:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/60/911385/1.jpg?0643",
-      },
-      productPrice: {
-        regularPrice: "10000",
-        salePrice: "9000",
-      },
-      quantity: 4,
-    },
-  ];
+  const { cartItems } = useSelector((state) => state.cart);
+
+  // modal close
+  const handleClose = () => {
+    setShowModal(false);
+  };
 
   const totalPrice = cartItems.reduce((acc, item) => {
     return acc + item.productPrice.salePrice * item.quantity;
@@ -55,13 +40,13 @@ function Cart() {
 
   const minusCartItem = (id) => {
     //if there is only one item in the cart then do not allow to minus
-    if (cartItems.find((item) => item._id === id).quantity === 1) {
+    if (cartItems.find((item) => item.id === id).quantity === 1) {
       return;
     }
     dispatch({
       type: ADD_TO_CART,
       payload: {
-        _id: id,
+        id: id,
         quantity: -1,
       },
     });
@@ -71,7 +56,7 @@ function Cart() {
     dispatch({
       type: ADD_TO_CART,
       payload: {
-        _id: id,
+        id: id,
         quantity: 1,
       },
     });
@@ -440,6 +425,41 @@ function Cart() {
             </div>
             {cartItems?.map((item, index) => (
               <div key={index}>
+                {" "}
+                <div className="!w-full !max-w-lg ">
+                  <Dialog
+                    onClose={handleClose}
+                    open={showModal}
+                    fullWidth={true}
+                    className="!w-full"
+                  >
+                    <DialogTitle className="!pt-7">
+                      Remove from Cart
+                    </DialogTitle>
+                    <DialogContent>
+                      <DialogContentText>
+                        Are you sure you want to remove this item from your
+                        cart?
+                      </DialogContentText>
+                      {/* buttons */}
+                      <div className="!flex !justify-start !mt-7">
+                        <div className="w-full ">
+                          <Button
+                            className="!bg-secondary-main/80 px-4 py-2 rounded-md !w-full !text-black/80 !text-lg !text-center  hover:!bg-secondary-main !capitalize hover:!text-black/95"
+                            onClick={async () => {
+                              deleteCartItem(item.id);
+                            }}
+                            startIcon={
+                              <Iconify icon="fluent:delete-20-filled" />
+                            }
+                          >
+                            Remove Item
+                          </Button>
+                        </div>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
+                </div>
                 <div className="w-full bg-white space-y-3 px-4 py-2 relative pb-4 rounded-md">
                   {/* products array in the cart */}
                   <div>
@@ -449,7 +469,7 @@ function Cart() {
                         <div>
                           <img
                             className="h-24 w-24 object-contain mr-4"
-                            src={item.productGallery.image}
+                            src={item.productGallery.productImage}
                             alt="product"
                           />
                         </div>
@@ -494,21 +514,24 @@ function Cart() {
                     <div className="flex items-center justify-between mt-4">
                       <div
                         className="flex items-center space-x-2 bg-secondary-main/10 px-3 rounded-sm hover:shadow-sm py-1 cursor-pointer"
-                        onClick={() => deleteCartItem(item._id)}
+                        onClick={() => {
+                          // OPEN MODAL
+                          setShowModal(true);
+                        }}
                       >
                         <Icon
                           className="!h-6 !w-6 text-secondary-main"
                           icon="fluent:delete-20-filled"
                         />
                         <span className=" tracking-wide font-[500] text-secondary-main">
-                          DELETE
+                          REMOVE
                         </span>
                       </div>
 
                       <div className="flex items-center space-x-4 text-white">
                         <div>
                           <PlusIcon
-                            onClick={() => plusCartItem(item._id)}
+                            onClick={() => plusCartItem(item.id)}
                             className="!h-7 !w-7 p-1 bg-secondary-main/80 shadow-lg shadow-secondary-main/20 rounded-sm cursor-pointer hover:bg-secondary-main"
                           />
                         </div>
@@ -517,7 +540,7 @@ function Cart() {
                         </div>
                         <div>
                           <MinusIcon
-                            onClick={() => minusCartItem(item._id)}
+                            onClick={() => minusCartItem(item.id)}
                             className="!h-7 p-1 !w-7 bg-secondary-main/80 shadow-lg shadow-secondary-main/20 rounded-sm cursor-pointer hover:bg-secondary-main"
                           />
                         </div>

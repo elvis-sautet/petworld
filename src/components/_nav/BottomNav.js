@@ -1,13 +1,12 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
 import { Icon } from "@iconify/react";
 
 function BottomNav() {
   const location = useLocation();
-
+  const { cartItems } = useSelector((state) => state.cart);
   // cart items length example
-  const cartItems = ["product1", "product2"];
 
   //   checking if the clicked link is the same as the current location
   const isActive = (match, location) => {

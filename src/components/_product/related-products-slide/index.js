@@ -56,7 +56,7 @@ const NextArrow = (props) => {
 };
 
 // eslint-disable-next-line no-unused-vars
-const ProductSlide = ({ recentlyViewed }) => {
+const SimilarProductsSlide = ({ similarProductsArray }) => {
   const settings = {
     // dont show dots
     dots: false,
@@ -106,11 +106,11 @@ const ProductSlide = ({ recentlyViewed }) => {
   };
   return (
     <Slider {...settings}>
-      {recentlyViewed.map((product) => (
+      {similarProductsArray.map((product) => (
         <Product key={product.id} {...product} />
       ))}
     </Slider>
   );
 };
 
-export default ProductSlide;
+export default SimilarProductsSlide;
