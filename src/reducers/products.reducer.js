@@ -1644,6 +1644,24 @@ export default function (state = initialState, action) {
         loading: false,
       };
     case ADD_NEW_VIEWED_PRODUCT_SUCCESS:
+      const payloadData = action.payload;
+
+      // check if the payload is an array, if it is, then add the new product to the array
+      if (Array.isArray(payloadData)) {
+        // loop through the payload array and check if the product id is in the viewedProducts array
+        return payloadData.forEach((product) => {
+          if (state.viewedProducts.some((item) => item.id === product.id)) {
+            // if the product id is in the viewedProducts array, then do nothing
+          } else {
+            // if the product id is not in the viewedProducts array, then add it to the array
+            return {
+              ...state,
+              viewedProducts: [...state.viewedProducts, product],
+            };
+          }
+        });
+      }
+
       return {
         ...state,
         viewedProducts: action.payload,

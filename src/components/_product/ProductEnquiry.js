@@ -6,7 +6,10 @@ import AddRoundedIcon from "@mui/icons-material/AddRounded";
 import RemoveRoundedIcon from "@mui/icons-material/RemoveRounded";
 import Page from "../Page";
 import { useDispatch, useSelector } from "react-redux";
-import { ADD_TO_CART } from "../../actions/types";
+import {
+  ADD_NEW_VIEWED_PRODUCT_SUCCESS,
+  ADD_TO_CART,
+} from "../../actions/types";
 import { enqueueSnackbar } from "../../actions/enqueueSnackbar.action";
 import { CircularProgress } from "@mui/material";
 import { numberWithCommas } from "../../utils/productUtils";
@@ -34,43 +37,42 @@ function ProductItem() {
 
   // when this page is loaded, create get the cached database from local storage
   // and set it to the viewed products
-  useEffect(() => {
-    (async () => {
-      const localStorageCachedDatabase = await localStorage.getItem(
-        LOCAL_STORAGE_CACHED_DATABASE
-      );
+  // useEffect(() => {
+  //   (async () => {
+  //     const localStorageCachedDatabase = await localStorage.getItem(
+  //       LOCAL_STORAGE_CACHED_DATABASE
+  //     );
 
-      // if the local storage database is not created yet, create it and set it to the viewed products
-      if (
-        localStorageCachedDatabase === null ||
-        localStorageCachedDatabase === undefined
-      ) {
-        console.log("local storage database is not created yet");
-        console.log(
-          "....................creating local storage database...................."
-        );
-        localStorage.setItem(LOCAL_STORAGE_CACHED_DATABASE, JSON.stringify([]));
-      } else {
-        //if we have the database cached, get it and set it to the viewed products
-        const cachedData = await localStorage.getItem(
-          LOCAL_STORAGE_CACHED_DATABASE
-        );
-        // const cachedDataParsed = JSON.parse(cachedData);
-        // console.log("cachedDataParsed", cachedDataParsed);
+  //     // if the local storage database is not created yet, create it and set it to the viewed products
+  //     if (
+  //       localStorageCachedDatabase === null ||
+  //       localStorageCachedDatabase === undefined
+  //     ) {
+  //       console.log("local storage database is not created yet");
+  //       console.log(
+  //         "....................creating local storage database...................."
+  //       );
+  //       localStorage.setItem(LOCAL_STORAGE_CACHED_DATABASE, JSON.stringify([]));
+  //     } else {
+  //       //if we have the database cached, get it and set it to the viewed products
+  //       const cachedData = localStorage.getItem(LOCAL_STORAGE_CACHED_DATABASE);
+  //       console.log("cachedData in poduct enquiry", cachedData);
+  //       // const cachedDataParsed = JSON.parse(cachedData);
+  //       // console.log("cachedDataParsed", cachedDataParsed);
 
-        // if the cached data is not empty, set it to the viewed products in the redux store
-        if (cachedData.length > 0) {
-          dispatch({
-            type: ADD_TO_CART,
-            payload: JSON.parse(cachedData),
-          });
-        }
+  //       // if the cached data is not empty, set it to the viewed products in the redux store
+  //       if (cachedData.length > 0) {
+  //         dispatch({
+  //           type: ADD_NEW_VIEWED_PRODUCT_SUCCESS,
+  //           payload: JSON.parse(cachedData),
+  //         });
+  //       }
 
-        console.log("fetched cached | user viewed products", cachedData);
-      }
-    })();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  //       console.log("fetched cached | user viewed products", cachedData);
+  //     }
+  //   })();
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
 
   //functionality of finding the product using the id when the page loads
   const productFound = useMemo(() => {
@@ -92,6 +94,13 @@ function ProductItem() {
         // product viewed
         // get this product id
         const productId = product?.id;
+
+        // get all the viewed products
+        const viewedProductsFromCache = viewedProducts?.map(
+          (product) => product
+        );
+
+        console.log("viewedProducts", viewedProductsFromCache);
 
         return {
           ...product,
