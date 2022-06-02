@@ -4,15 +4,16 @@ import CommandPallete from "../../components/_commandPallete/CommandPallete";
 import BottomNav from "../../components/_nav/BottomNav";
 import NavBar from "../../components/_nav/NavBar";
 
-const APP_BAR_MOBILE = 10;
-const APP_BAR_DESKTOP = 10;
+// const APP_BAR_MOBILE = 10;
+// const APP_BAR_DESKTOP = 10;
 
 const RootStyle = styled("div")({
   display: "flex",
   flexDirection: "column",
   minHeight: "100%",
   overflow: "hidden",
-  backgroundColor: "#E5E5E5",
+  backgroundColor: "#f5f5f5",
+  height: "100vh",
 });
 
 const MainStyle = styled("div")(({ theme }) => ({
@@ -32,7 +33,7 @@ const MainStyle = styled("div")(({ theme }) => ({
 
 const HomeLayout = () => {
   return (
-    <RootStyle>
+    <RootStyle className="!transition-all !ease-in-out">
       {/* here we can add a navigation */}
       <header className="sticky top-0 z-50">
         <NavBar />

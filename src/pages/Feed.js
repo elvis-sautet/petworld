@@ -1,12 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import Banner from "../components/Banner";
 import Page from "../components/Page";
 import Product from "../components/_product/Product";
-import ProductMOCK from "../_mocks_/products";
 
 function Feed() {
-  // eslint-disable-next-line no-unused-vars
-  const [products, setProducts] = React.useState(ProductMOCK);
+  const { products } = useSelector((state) => state.products);
 
   return (
     <Page title="feed">

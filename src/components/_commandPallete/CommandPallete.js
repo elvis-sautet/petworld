@@ -125,16 +125,37 @@ function CommandPallete() {
             onChange={(project) => {
               //when user selects a product, redirect to the /product/:id page
               dispatch({ type: CLOSE_COMMAND_PALLETE });
-              navigate(`/product/${project._id}`);
+              // navigate(`/product/${project._id}`);
+              navigate(`product/${project.id}`);
             }}
           >
             <div className="flex items-center px-4">
-              <SearchIcon className="h6 w-6 text-gray-500 " />
+              <SearchIcon className="h6 w-6 text-gray-500 flex-grow-0" />
               <Combobox.Input
                 onChange={(e) => setQuery(e.target.value)}
-                className="w-full bg-transparent border-0 focus:ring-0 text-sm text-gray-800 placeholder:text-400 h-12 border-none focus:outline-none focus:border-none pl-2"
+                className="bg-transparent border-0 focus:ring-0 text-sm text-gray-800 placeholder:text-400 h-12 border-none focus:outline-none focus:border-none pl-2 w-full flex-1 !py-6 md:!text-lg flex-grow"
                 placeholder="Search for a product..."
               />
+              {/* close combobox */}
+              <button
+                className="absolute right-0 top-0 mt-3 mr-3 flex-grow-0"
+                onClick={() => dispatch({ type: CLOSE_COMMAND_PALLETE })}
+              >
+                <svg
+                  className="h-6 w-6 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
             </div>
 
             {/* options */}
@@ -146,10 +167,11 @@ function CommandPallete() {
                       <div
                         className={`px-4 py-2 ${
                           active
-                            ? "bg-fountain-blue text-white"
+                            ? "bg-tertiary-main text-white"
                             : "bg-white text-slate-900"
                         }
-				line-clamp-2 font-semibold  select-none`}
+                      line-clamp-2 font-semibold  select-none md:text-lg
+        `}
                       >
                         {product.productName}
                       </div>
