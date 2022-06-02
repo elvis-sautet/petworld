@@ -1,6 +1,6 @@
 {
+  "name": "petworld",
   "short_name": "Petworld",
-  "name": "Pet world",
   "icons": [
     {
       "src": "/iconx/android-chrome-192x192.png",

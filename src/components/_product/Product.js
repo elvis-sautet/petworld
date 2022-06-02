@@ -19,6 +19,10 @@ function Product(props) {
   // percentage of items left in stock
   const percentageLeft = (itemsLeftInStock / itemsInStock) * 100;
 
+  // check percentage of items left in stock
+  // if less than 10% of items left in stock, show warning with red background
+  const isLowStock = percentageLeft < 30 ? "bg-red-600" : "bg-secondary-main";
+
   // calculate the discount
   const regularPrice = convertToNumber(props?.productPrice?.regularPrice);
   const salePrice = convertToNumber(props?.productPrice?.salePrice);
@@ -30,7 +34,7 @@ function Product(props) {
   );
 
   return (
-    <div className="relative cursor-pointer bg-white p-4 rounded-sm text-sm flex-grow-0 z-30">
+    <div className="relative cursor-pointer bg-white p-4 rounded-sm text-sm flex-grow-0 z-30 hover:shadow-2xl shadow-slate-200">
       {/* absolute positioned percentge */}
       <div className="absolute top-0 right-0 mr-6 mt-2 z-40">
         <div className="text-sm px-6 py-[3px] rounded-md bg-tertiary-main/20 text-secondary-main">
@@ -59,7 +63,7 @@ function Product(props) {
           ))}
       </div>
       {/* TODO:change the id */}
-      <Link to={`/home/product/test-id`}>
+      <Link to={`/home/product/${props.id}`}>
         <p className="text-black line-clamp-1 text-[16px]  tracking-wide mt-1">
           {props.productName}
         </p>
@@ -81,7 +85,9 @@ function Product(props) {
           </p>
           <div className="relative overflow-hidden bg-[#C4C4C4] rounded-md h-[6px] w-full">
             <div
-              className="bg-secondary-main rounded-md  inset-0 absolute"
+              className={`
+              ${isLowStock}
+              rounded-md  inset-0 absolute`}
               style={{ width: `${percentageLeft}%` }}
             ></div>
           </div>
