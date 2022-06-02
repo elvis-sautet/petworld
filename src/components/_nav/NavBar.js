@@ -30,16 +30,16 @@ function NavBar() {
     {
       icon: require("../../images/cart.png"),
       label: "Cart",
-      to: "cart",
+      to: "/home/cart",
     },
   ];
 
   return (
     <div className="navbar bg-tertiary-main w-full">
       <div className="leading-8 py-4 px-4 flex items-center justify-between whitespace-nowrap">
-        <div>
+        <Link to="/home/feed">
           <img src={logo} alt="logo" className="w-[169px]h-[48px]" />
-        </div>{" "}
+        </Link>{" "}
         {/* search input with button*/}
         <div
           className="search items-center hidden space-x-2 lg:flex lg:justify-between p-3 py-1 ring-white group cursor-pointer ring-2 rounded-lg w-[467px] h-[44px] bg-tertiary-main"
@@ -85,7 +85,7 @@ function NavBar() {
             className="flex items-center space-x-2 font-medium hover:cursor-pointer justify-end  text-xm tracking-wide lg:hidden "
           >
             <Search className="text-white !h-[28px] !w-[28px] group-hover:font-semibold" />
-            <span className="text-white  tracking-wider">Search</span>
+            {/* <span className="text-white  tracking-wider">Search</span> */}
           </div>
         </div>
       </div>

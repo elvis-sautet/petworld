@@ -30,7 +30,7 @@ function Product(props) {
   );
 
   return (
-    <div className="relative cursor-pointer bg-white p-4 rounded-sm text-sm flex-grow-0 z-30">
+    <div className="relative cursor-pointer bg-white p-4 rounded-sm text-sm flex-grow-0 z-30 hover:shadow-2xl shadow-slate-200">
       {/* absolute positioned percentge */}
       <div className="absolute top-0 right-0 mr-6 mt-2 z-40">
         <div className="text-sm px-6 py-[3px] rounded-md bg-tertiary-main/20 text-secondary-main">

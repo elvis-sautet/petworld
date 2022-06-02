@@ -10,3 +10,8 @@ export const CLEAR_MESSAGE = "CLEAR_MESSAGE";
 // command pallete types
 export const OPEN_COMMAND_PALLETE = "OPEN_COMMAND_PALLETE";
 export const CLOSE_COMMAND_PALLETE = "CLOSE_COMMAND_PALLETE";
+
+//cart types
+export const ADD_TO_CART = "ADD_TO_CART";
+export const REMOVE_FROM_CART = "REMOVE_FROM_CART";
+export const CLEAN_CART = "CLEAN_CART";
