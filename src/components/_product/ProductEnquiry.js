@@ -24,16 +24,18 @@ function ProductItem() {
   const [imageIndex, setImageIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
-  const [showMore, setShowMore] = useState(true);
+  const [showMore, setShowMore] = useState(false);
+  const [productLength, setProductLength] = React.useState(0);
+
   const { products, error, loading, viewedProducts } = useSelector(
     (state) => state?.products
   );
   // scroll to top
-  const { pathname } = useLocation();
 
   // function to scroll to top when page is loaded
   useEffect(() => {
     window.scrollTo(0, 0);
+    setShowMore(false);
   }, [id]);
 
   // when this page is loaded, create get the cached database from local storage
@@ -91,7 +93,7 @@ function ProductItem() {
         const productImages = product?.productGallery?.productImages;
         // add the product image to the images array at the beginning
         const images = [productImage, ...productImages];
-
+        setProductLength(product.productDescription?.length);
         // product viewed
         // get this product id
         const productId = product?.id;
@@ -215,39 +217,33 @@ function ProductItem() {
   }
 
   function showAllDescription(description) {
-    // return the description
-    if (showMore === true) {
+    //if the productLength state is more than 400 but the showMore state is false, then show the show more button and display the first 400 characters, else display the whole description and display the show less button
+    if (productLength > 400 && showMore === false) {
       return (
-        <>
-          <span>{productFound.productDescription}</span>
+        <div>
+          <p>{description.substring(0, 400)}...</p>
           <button
             className="flex items-center space-x-2 bg-secondary-main/30 hover:bg-secondary-main/30 px-3 rounded-sm hover:shadow-sm py-1 cursor-pointer mt-3"
-            onClick={() => {
-              setShowMore(false);
-              //show all the description
-            }}
+            onClick={() => setShowMore(true)}
           >
-            Show Less
+            Read More
           </button>
-        </>
+        </div>
+      );
+    } else if (productLength > 400 && showMore === true) {
+      return (
+        <div>
+          <p>{description}</p>
+          <button
+            className="flex items-center space-x-2 bg-secondary-main/30 hover:bg-secondary-main/30 px-3 rounded-sm hover:shadow-sm py-1 cursor-pointer mt-3"
+            onClick={() => setShowMore(false)}
+          >
+            Read Less
+          </button>
+        </div>
       );
     } else {
-      return (
-        <>
-          <span>{productFound.productDescription.slice(0, 558)}</span>
-          <span className="">...</span>
-          <button
-            className="flex items-center space-x-2 bg-secondary-main/30 hover:bg-secondary-main/30 px-3 rounded-sm hover:shadow-sm py-1 cursor-pointer mt-3"
-            onClick={() => {
-              setShowMore(true);
-              //show all the description
-              showAllDescription(description);
-            }}
-          >
-            Show More
-          </button>
-        </>
-      );
+      return <p>{description}</p>;
     }
   }
 
