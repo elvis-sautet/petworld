@@ -28,7 +28,7 @@ function Cart() {
   };
 
   const totalPrice = cartItems.reduce((acc, item) => {
-    return acc + item.productPrice.salePrice * item.quantity;
+    return acc + item.productPrice?.salePrice * item.quantity;
   }, 0);
 
   const deleteCartItem = (id) => {

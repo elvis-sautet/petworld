@@ -115,6 +115,7 @@ function ProductItem() {
         return null;
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [products, id]);
 
   //if we have no product then we have to redirect to the home page check if the product found is null or undefined
