@@ -76,334 +76,8 @@ function Cart() {
 
   // recently viewed items or the history of the user viewed items
   //similar products algorithm
-  const recentlyViewed = [
-    {
-      id: uuidv4(),
-      productName: "Reflex Kitten Food -Chicken & Rice 2kg",
-      productPrice: {
-        salePrice: "1740",
-        regularPrice: "1840",
-      },
-      productGallery: {
-        productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/60/911385/1.jpg?0643",
-
-        productImages: [],
-      },
-      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
-    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
-      productCategory: {
-        categoryName: "Food",
-        subCategoryName: "Cat Food",
-      },
-      productBrand: "Reflex",
-      // productStock is the product quantity in stock or the original quantity.
-      productStock: "10",
-      // quantity of items left in stock
-      productsLeftInStock: "6",
-      productDetails: {
-        productReviews: [
-          {
-            reviewId: uuidv4(),
-            fullName: "John Doe",
-            review: "This is a review",
-            rating: "5",
-            date: "2020-01-01",
-          },
-        ],
-        productSpecifications: [
-          {
-            specificationId: uuidv4(),
-            specificationName: "Weight",
-            specificationValue: "2kg",
-          },
-          {
-            specificationId: uuidv4(),
-            specificationName: "Size",
-            specificationValue: "2kg",
-          },
-        ],
-        productLikes: [
-          {
-            likeId: uuidv4(),
-            fullName: "John Doe",
-          },
-        ],
-      },
-      // product rating between 1 to 5
-    },
-    {
-      id: uuidv4(),
-      productName: "Reflex Kitten Food -Chicken & Rice 2kg",
-      productPrice: {
-        salePrice: "1740",
-        regularPrice: "1840",
-      },
-      productGallery: {
-        productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/60/911385/1.jpg?0643",
-        productImages: [],
-      },
-      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
-    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
-      productCategory: {
-        categoryName: "Food",
-        subCategoryName: "Cat Food",
-      },
-      productBrand: "Reflex",
-      // productStock is the product quantity in stock or the original quantity.
-      productStock: "10",
-      // quantity of items left in stock
-      productsLeftInStock: "6",
-      productDetails: {
-        productReviews: [
-          {
-            reviewId: uuidv4(),
-            fullName: "John Doe",
-            review: "This is a review",
-            rating: "5",
-            date: "2020-01-01",
-          },
-        ],
-        productSpecifications: [
-          {
-            specificationId: uuidv4(),
-            specificationName: "Weight",
-            specificationValue: "2kg",
-          },
-          {
-            specificationId: uuidv4(),
-            specificationName: "Size",
-            specificationValue: "2kg",
-          },
-        ],
-        productLikes: [
-          {
-            likeId: uuidv4(),
-            fullName: "John Doe",
-          },
-        ],
-      },
-      // product rating between 1 to 5
-    },
-    {
-      id: uuidv4(),
-      productName: "Reflex Kitten Food -Chicken & Rice 2kg",
-      productPrice: {
-        salePrice: "1740",
-        regularPrice: "1840",
-      },
-      productGallery: {
-        productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/60/911385/1.jpg?0643",
-        productImages: [],
-      },
-      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
-    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
-      productCategory: {
-        categoryName: "Food",
-        subCategoryName: "Cat Food",
-      },
-      productBrand: "Reflex",
-      // productStock is the product quantity in stock or the original quantity.
-      productStock: "10",
-      // quantity of items left in stock
-      productsLeftInStock: "6",
-      productDetails: {
-        productReviews: [
-          {
-            reviewId: uuidv4(),
-            fullName: "John Doe",
-            review: "This is a review",
-            rating: "5",
-            date: "2020-01-01",
-          },
-        ],
-        productSpecifications: [
-          {
-            specificationId: uuidv4(),
-            specificationName: "Weight",
-            specificationValue: "2kg",
-          },
-          {
-            specificationId: uuidv4(),
-            specificationName: "Size",
-            specificationValue: "2kg",
-          },
-        ],
-        productLikes: [
-          {
-            likeId: uuidv4(),
-            fullName: "John Doe",
-          },
-        ],
-      },
-      // product rating between 1 to 5
-    },
-    {
-      id: uuidv4(),
-      productName: "Reflex Kitten Food -Chicken & Rice 2kg",
-      productPrice: {
-        salePrice: "1740",
-        regularPrice: "1840",
-      },
-      productGallery: {
-        productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/60/911385/1.jpg?0643",
-
-        productImages: [],
-      },
-      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
-    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
-      productCategory: {
-        categoryName: "Food",
-        subCategoryName: "Cat Food",
-      },
-      productBrand: "Reflex",
-      // productStock is the product quantity in stock or the original quantity.
-      productStock: "10",
-      // quantity of items left in stock
-      productsLeftInStock: "6",
-      productDetails: {
-        productReviews: [
-          {
-            reviewId: uuidv4(),
-            fullName: "John Doe",
-            review: "This is a review",
-            rating: "5",
-            date: "2020-01-01",
-          },
-        ],
-        productSpecifications: [
-          {
-            specificationId: uuidv4(),
-            specificationName: "Weight",
-            specificationValue: "2kg",
-          },
-          {
-            specificationId: uuidv4(),
-            specificationName: "Size",
-            specificationValue: "2kg",
-          },
-        ],
-        productLikes: [
-          {
-            likeId: uuidv4(),
-            fullName: "John Doe",
-          },
-        ],
-      },
-      // product rating between 1 to 5
-    },
-    {
-      id: uuidv4(),
-      productName: "Reflex Kitten Food -Chicken & Rice 2kg",
-      productPrice: {
-        salePrice: "1740",
-        regularPrice: "1840",
-      },
-      productGallery: {
-        productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/60/911385/1.jpg?0643",
-        productImages: [],
-      },
-      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
-    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
-      productCategory: {
-        categoryName: "Food",
-        subCategoryName: "Cat Food",
-      },
-      productBrand: "Reflex",
-      // productStock is the product quantity in stock or the original quantity.
-      productStock: "10",
-      // quantity of items left in stock
-      productsLeftInStock: "6",
-      productDetails: {
-        productReviews: [
-          {
-            reviewId: uuidv4(),
-            fullName: "John Doe",
-            review: "This is a review",
-            rating: "5",
-            date: "2020-01-01",
-          },
-        ],
-        productSpecifications: [
-          {
-            specificationId: uuidv4(),
-            specificationName: "Weight",
-            specificationValue: "2kg",
-          },
-          {
-            specificationId: uuidv4(),
-            specificationName: "Size",
-            specificationValue: "2kg",
-          },
-        ],
-        productLikes: [
-          {
-            likeId: uuidv4(),
-            fullName: "John Doe",
-          },
-        ],
-      },
-      // product rating between 1 to 5
-    },
-    {
-      id: uuidv4(),
-      productName: "Reflex Kitten Food -Chicken & Rice 2kg",
-      productPrice: {
-        salePrice: "1740",
-        regularPrice: "1840",
-      },
-      productGallery: {
-        productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/60/911385/1.jpg?0643",
-        productImages: [],
-      },
-      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
-    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
-      productCategory: {
-        categoryName: "Food",
-        subCategoryName: "Cat Food",
-      },
-      productBrand: "Reflex",
-      // productStock is the product quantity in stock or the original quantity.
-      productStock: "10",
-      // quantity of items left in stock
-      productsLeftInStock: "6",
-      productDetails: {
-        productReviews: [
-          {
-            reviewId: uuidv4(),
-            fullName: "John Doe",
-            review: "This is a review",
-            rating: "5",
-            date: "2020-01-01",
-          },
-        ],
-        productSpecifications: [
-          {
-            specificationId: uuidv4(),
-            specificationName: "Weight",
-            specificationValue: "2kg",
-          },
-          {
-            specificationId: uuidv4(),
-            specificationName: "Size",
-            specificationValue: "2kg",
-          },
-        ],
-        productLikes: [
-          {
-            likeId: uuidv4(),
-            fullName: "John Doe",
-          },
-        ],
-      },
-      // product rating between 1 to 5
-    },
-  ];
+  const { products } = useSelector((state) => state.products);
+  const recentViewed = products?.slice(5, products.length);
 
   const emptyCartImage = require("../../images/emptycart.png");
   return (
@@ -514,7 +188,7 @@ function Cart() {
                     {/* remove button and add to cart */}
                     <div className="flex items-center justify-between mt-4">
                       <div
-                        className="flex items-center space-x-2 bg-secondary-main/10 px-3 rounded-sm hover:shadow-sm py-1 cursor-pointer"
+                        className="flex items-center space-x-2 bg-secondary-main/10 hover:bg-secondary-main/30 px-3 rounded-sm hover:shadow-sm py-1 cursor-pointer"
                         onClick={() => {
                           // OPEN MODAL
                           setShowModal(true);
@@ -531,18 +205,18 @@ function Cart() {
 
                       <div className="flex items-center space-x-4 text-white">
                         <div>
-                          <PlusIcon
-                            onClick={() => plusCartItem(item.id)}
-                            className="!h-7 !w-7 p-1 bg-secondary-main/80 shadow-lg shadow-secondary-main/20 rounded-sm cursor-pointer hover:bg-secondary-main"
+                          <MinusIcon
+                            onClick={() => minusCartItem(item.id)}
+                            className="!h-7 p-1 !w-7 bg-secondary-main/80 shadow-lg shadow-secondary-main/20 rounded-sm cursor-pointer hover:bg-secondary-main"
                           />
                         </div>
                         <div className="text-black font-semibold">
                           {item.quantity}
                         </div>
                         <div>
-                          <MinusIcon
-                            onClick={() => minusCartItem(item.id)}
-                            className="!h-7 p-1 !w-7 bg-secondary-main/80 shadow-lg shadow-secondary-main/20 rounded-sm cursor-pointer hover:bg-secondary-main"
+                          <PlusIcon
+                            onClick={() => plusCartItem(item.id)}
+                            className="!h-7 !w-7 p-1 bg-secondary-main/80 shadow-lg shadow-secondary-main/20 rounded-sm cursor-pointer hover:bg-secondary-main"
                           />
                         </div>
                       </div>
@@ -638,7 +312,7 @@ function Cart() {
       )}
 
       {/* Recently viewed / search history */}
-      {recentlyViewed.length > 0 && (
+      {products?.length > 0 && (
         <div className="mt-5 bg-white p-3">
           <div className="relative text-center max-w-max">
             <h3 className="text-black capitalize tracking-wide font-semibold mb-4 lg:text-lg">
@@ -653,7 +327,7 @@ function Cart() {
             ))}
 
           </div> */}
-          <CartSlider recentlyViewed={recentlyViewed} />
+          <CartSlider recentlyViewed={recentViewed} />
         </div>
       )}
     </div>

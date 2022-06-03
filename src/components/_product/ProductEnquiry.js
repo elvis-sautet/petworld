@@ -360,7 +360,10 @@ function ProductItem() {
               </div>
               <div>
                 <SimilarProductsSlide
-                  similarProductsArray={similarProductsArrayUnique}
+                  similarProductsArray={similarProductsArrayUnique.slice(
+                    3,
+                    similarProductsArrayUnique?.length
+                  )}
                 />
               </div>
             </div>
@@ -378,7 +381,10 @@ function ProductItem() {
               </div>
               <div>
                 <CustomersAlsoSearched
-                  similarProductsArray={similarProductsArrayUnique}
+                  similarProductsArray={similarProductsArrayUnique.slice(
+                    12,
+                    similarProductsArrayUnique?.length
+                  )}
                 />
               </div>
             </div>
@@ -396,7 +402,10 @@ function ProductItem() {
               </div>
               <div>
                 <YouMayAlsoLike
-                  similarProductsArray={similarProductsArrayUnique}
+                  similarProductsArray={similarProductsArrayUnique.slice(
+                    7,
+                    similarProductsArrayUnique?.length
+                  )}
                 />
               </div>
             </div>
