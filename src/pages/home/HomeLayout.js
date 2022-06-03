@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import CommandPallete from "../../components/_commandPallete/CommandPallete";
 import BottomNav from "../../components/_nav/BottomNav";
 import NavBar from "../../components/_nav/NavBar";
+import SubNav from "../../components/_nav/SubNav";
 
 // const APP_BAR_MOBILE = 10;
 // const APP_BAR_DESKTOP = 10;
@@ -10,10 +11,11 @@ import NavBar from "../../components/_nav/NavBar";
 const RootStyle = styled("div")({
   display: "flex",
   flexDirection: "column",
-  minHeight: "100%",
+  minHeight: "100vh",
   overflow: "hidden",
   backgroundColor: "#f5f5f5",
-  height: "100vh",
+  height: "100%",
+  position: "relative",
 });
 
 const MainStyle = styled("div")(({ theme }) => ({
@@ -35,16 +37,19 @@ const HomeLayout = () => {
   return (
     <RootStyle className="!transition-all !ease-in-out">
       {/* here we can add a navigation */}
-      <header className="sticky top-0 z-50">
-        <NavBar />
-      </header>
-      <CommandPallete />
-      <MainStyle>
-        <Outlet />
-      </MainStyle>
-      <header className="h-full w-full lg:hidden">
-        <BottomNav />
-      </header>
+      <div className="main">
+        <div className="!sticky !top-0 !z-50">
+          <NavBar />
+          <SubNav />
+        </div>
+        <CommandPallete />
+        <MainStyle>
+          <Outlet />
+        </MainStyle>
+        <header className="h-full w-full lg:hidden">
+          <BottomNav />
+        </header>
+      </div>
     </RootStyle>
   );
 };

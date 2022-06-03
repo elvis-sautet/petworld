@@ -36,7 +36,7 @@ function NavBar() {
   ];
 
   return (
-    <div className="navbar bg-tertiary-main w-full">
+    <div className="navbar bg-tertiary-main w-full sticky top-0  whitespace-nowrap z-50">
       <div className="leading-8 py-4 px-4 flex items-center justify-between whitespace-nowrap">
         <Link to="/home/feed">
           <img src={logo} alt="logo" className="w-[169px]h-[48px]" />
