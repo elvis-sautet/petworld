@@ -8,15 +8,14 @@ import SubNav from "../../components/_nav/SubNav";
 // const APP_BAR_MOBILE = 10;
 // const APP_BAR_DESKTOP = 10;
 
-const RootStyle = styled("div")({
-  display: "flex",
-  flexDirection: "column",
-  minHeight: "100vh",
-  overflow: "hidden",
-  backgroundColor: "#f5f5f5",
-  height: "100%",
-  position: "relative",
-});
+// const RootStyle = styled("div")({
+//   display: "flex",
+//   flexDirection: "column",
+//   minHeight: "100vh",
+//   overflow: "hidden",
+//   backgroundColor: "#f5f5f5",
+//   height: "100%",
+// });
 
 const MainStyle = styled("div")(({ theme }) => ({
   flexGrow: 1,
@@ -35,10 +34,10 @@ const MainStyle = styled("div")(({ theme }) => ({
 
 const HomeLayout = () => {
   return (
-    <RootStyle className="!transition-all !ease-in-out">
+    <div className="!transition-all !ease-in-out bg-[#f5f5f5]">
       {/* here we can add a navigation */}
       <div className="main">
-        <div className="!sticky !top-0 !z-50">
+        <div className="sticky top-0 z-50">
           <NavBar />
           <SubNav />
         </div>
@@ -50,7 +49,7 @@ const HomeLayout = () => {
           <BottomNav />
         </header>
       </div>
-    </RootStyle>
+    </div>
   );
 };
 

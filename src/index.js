@@ -26,7 +26,11 @@ root.render(
           <SnackbarProvider
             maxSnack={1} //this is the max number of snackbars that can be shown at once
             autoHideDuration={3000} //this is the time in milliseconds that the snackbar will be shown
-            anchorOrigin={{ vertical: "top", horizontal: "right" }} //this is the position of the snackbar
+            // make the top right of the snackbar to be 4 px from the top and 4 px from the right
+            anchorOrigin={{
+              vertical: "top",
+              horizontal: "left",
+            }} //this is the position of the snackbar
             // the snackbar can be customized to have different colors using the style prop
             style={{
               success: styles.success,
