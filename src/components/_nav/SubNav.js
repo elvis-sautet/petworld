@@ -1,11 +1,10 @@
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
+import Tooltip from "@mui/material/Tooltip";
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 function SubNav() {
-  const [selected, selectedIndex] = React.useState(0);
-
   const DogsSubLinks = [
     {
       name: "Dog Food",
@@ -43,13 +42,16 @@ function SubNav() {
   ];
 
   return (
-    <div className="bg-tertiary-main/95 w-full sticky top-0 z-50">
+    <div className="bg-tertiary-main/95 w-full z-50 hidden sm:inline-flex">
       <div className="flex items-center py-2 px-4 space-x-3">
         {/* dogs */}
+        {/* cats */}
         <Menu as="div" className="relative inline-block text-left">
           <div className="text-[20px]">
             <Menu.Button className="inline-flex text-w-full justify-center rounded-md   px-4 py-2 text-sm items-center tracking-wider font-medium text-white hover:bg-secondary-main/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-              <span>Dogs</span>
+              <Tooltip title="Shop By Cat" arrow>
+                <span className="text-[16px]">Dogs</span>
+              </Tooltip>
               <ChevronDownIcon
                 className="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"
                 aria-hidden="true"
@@ -66,7 +68,7 @@ function SubNav() {
             leaveTo="transform opacity-0 scale-95"
           >
             <Menu.Items className="absolute left-0 mt-1 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-              <div className="px-1 py-1 ">
+              <div className="px-1 py-1  divide-y">
                 {DogsSubLinks.map((link, index) => (
                   <Menu.Item>
                     {({ active }) => (
@@ -76,7 +78,7 @@ function SubNav() {
                           active
                             ? "bg-secondary-main text-white"
                             : "text-gray-900"
-                        } group flex w-full items-center rounded-md px-2 py-2 text-sm tracking-wider`}
+                        } group flex w-full items-center rounded-md px-2 py-2 text-sm tracking-wider text-[15px]`}
                       >
                         {link.name}
                       </Link>
@@ -91,7 +93,7 @@ function SubNav() {
         <Menu as="div" className="relative inline-block text-left">
           <div className="text-[20px]">
             <Menu.Button className="inline-flex text-w-full justify-center rounded-md   px-4 py-2 text-sm items-center tracking-wider font-medium text-white hover:bg-secondary-main/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-              <span>Cats</span>
+              <span className="text-[16px]">Cats</span>
               <ChevronDownIcon
                 className="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"
                 aria-hidden="true"
@@ -118,7 +120,7 @@ function SubNav() {
                           active
                             ? "bg-secondary-main text-white"
                             : "text-gray-900"
-                        } group flex w-full items-center rounded-md px-2 py-2 text-sm tracking-wider`}
+                        } group flex w-full items-center rounded-md px-2 py-2 text-sm tracking-wider text-[15px]`}
                       >
                         {link.name}
                       </Link>
@@ -133,7 +135,7 @@ function SubNav() {
         <Menu as="div" className="relative inline-block text-left">
           <div className="text-[20px]">
             <Menu.Button className="inline-flex text-w-full justify-center rounded-md   px-4 py-2 text-sm items-center tracking-wider font-medium text-white hover:bg-secondary-main/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-              <span>Services</span>
+              <span className="text-[16px]">Services</span>
               <ChevronDownIcon
                 className="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"
                 aria-hidden="true"
@@ -160,7 +162,7 @@ function SubNav() {
                           active
                             ? "bg-secondary-main text-white"
                             : "text-gray-900"
-                        } group flex w-full items-center rounded-md px-2 py-2 text-sm tracking-wider`}
+                        } group flex w-full items-center rounded-md px-2 py-2 text-sm tracking-wider text-[15px]`}
                       >
                         {link.name}
                       </Link>
@@ -175,7 +177,7 @@ function SubNav() {
         <Menu as="div" className="relative inline-block text-left">
           <div className="text-[20px]">
             <Menu.Button className="inline-flex text-w-full justify-center rounded-md   px-4 py-2 text-sm items-center tracking-wider font-medium text-white hover:bg-secondary-main/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-              <span>Accessories</span>
+              <span className="text-[16px]">Accessories</span>
             </Menu.Button>
           </div>
         </Menu>
@@ -183,7 +185,8 @@ function SubNav() {
         <Menu as="div" className="relative inline-block text-left">
           <div className="text-[20px]">
             <Menu.Button className="inline-flex text-w-full justify-center rounded-md   px-4 py-2 text-sm items-center tracking-wider font-medium text-white hover:bg-secondary-main/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-              <span className="!tracking-wider">Special Orders</span>
+              {" "}
+              <span className="text-[16px]">Special Orders</span>
             </Menu.Button>
           </div>
         </Menu>

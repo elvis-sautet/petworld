@@ -405,6 +405,7 @@ function Cart() {
     },
   ];
 
+  const emptyCartImage = require("../../images/emptycart.png");
   return (
     <div className="relative w-full py-5 select-none">
       {/* product */}
@@ -620,11 +621,13 @@ function Cart() {
             <div className="text-center">
               <img
                 className="h-72 w-72 object-contain"
-                src="/empty-cart.webp"
-                alt="nothing in cart"
+                src={emptyCartImage}
+                alt="Your cart is empty"
               />
-              <p className="text-lg  mt-5 text-gray-500">Your cart is empty.</p>
-              <Link to="/">
+              <p className="text-lg  mt-5 text-gray-500 tracking-wider">
+                Your cart is empty.
+              </p>
+              <Link to="/home/feed">
                 <button className="text-white px-4 py-2 bg-secondary-main  rounded-md shadow-md mt-4 hover:bg-secondary-main/70">
                   <span className="font-semibold">Continue shopping</span>
                 </button>
