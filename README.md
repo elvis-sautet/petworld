@@ -1,4 +1,4 @@
-<h1 style="color:#FE8D17">PETSTORE WEB APPLICATION</h1>
+<h1 style="color:#FE8D17">PETWORLD WEB APPLICATION</h1>
 
 <h2 style="color:#FE8D17">Todo</h2>
 
