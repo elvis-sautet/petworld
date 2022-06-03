@@ -24,6 +24,7 @@ function ProductItem() {
   const [imageIndex, setImageIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
+  const [showMore, setShowMore] = useState(true);
   const { products, error, loading, viewedProducts } = useSelector(
     (state) => state?.products
   );
@@ -213,6 +214,43 @@ function ProductItem() {
     );
   }
 
+  function showAllDescription(description) {
+    // return the description
+    if (showMore === true) {
+      return (
+        <>
+          <span>{productFound.productDescription}</span>
+          <button
+            className="flex items-center space-x-2 bg-secondary-main/30 hover:bg-secondary-main/30 px-3 rounded-sm hover:shadow-sm py-1 cursor-pointer mt-3"
+            onClick={() => {
+              setShowMore(false);
+              //show all the description
+            }}
+          >
+            Show Less
+          </button>
+        </>
+      );
+    } else {
+      return (
+        <>
+          <span>{productFound.productDescription.slice(0, 558)}</span>
+          <span className="">...</span>
+          <button
+            className="flex items-center space-x-2 bg-secondary-main/30 hover:bg-secondary-main/30 px-3 rounded-sm hover:shadow-sm py-1 cursor-pointer mt-3"
+            onClick={() => {
+              setShowMore(true);
+              //show all the description
+              showAllDescription(description);
+            }}
+          >
+            Show More
+          </button>
+        </>
+      );
+    }
+  }
+
   return (
     <Page title={`Enquiry of ${productFound?.productName}`}>
       <div className="">
@@ -344,7 +382,7 @@ function ProductItem() {
             </div>
             <div className="mt-5 w-full text-gray ">
               <p className="text-sm sm:text-[15px] w-full lg:text-[16px] tracking-wide leading-7">
-                {productFound.productDescription}
+                {showAllDescription(productFound.productDescription)}
               </p>
             </div>
           </div>
@@ -360,7 +398,10 @@ function ProductItem() {
               </div>
               <div>
                 <SimilarProductsSlide
-                  similarProductsArray={similarProductsArrayUnique}
+                  similarProductsArray={similarProductsArrayUnique.slice(
+                    3,
+                    similarProductsArrayUnique?.length
+                  )}
                 />
               </div>
             </div>
@@ -378,7 +419,10 @@ function ProductItem() {
               </div>
               <div>
                 <CustomersAlsoSearched
-                  similarProductsArray={similarProductsArrayUnique}
+                  similarProductsArray={similarProductsArrayUnique.slice(
+                    12,
+                    similarProductsArrayUnique?.length
+                  )}
                 />
               </div>
             </div>
@@ -396,7 +440,10 @@ function ProductItem() {
               </div>
               <div>
                 <YouMayAlsoLike
-                  similarProductsArray={similarProductsArrayUnique}
+                  similarProductsArray={similarProductsArrayUnique.slice(
+                    7,
+                    similarProductsArrayUnique?.length
+                  )}
                 />
               </div>
             </div>

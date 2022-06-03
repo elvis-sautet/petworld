@@ -8,7 +8,7 @@ function Feed() {
   const { products } = useSelector((state) => state.products);
 
   return (
-    <Page title="feed">
+    <Page title="PetWorld">
       {/* Slider Here */}
       <div className="z-30">
         <Banner />
