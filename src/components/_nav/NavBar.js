@@ -1,4 +1,5 @@
 import { Search } from "@mui/icons-material";
+import { Tooltip } from "@mui/material";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
@@ -36,7 +37,7 @@ function NavBar() {
   ];
 
   return (
-    <div className="navbar bg-tertiary-main w-full sticky top-0  whitespace-nowrap z-50">
+    <div className="navbar bg-tertiary-main w-full whitespace-nowrap z-50 overflow-hidden">
       <div className="leading-8 py-4 px-4 flex items-center justify-between whitespace-nowrap">
         <Link to="/home/feed">
           <img src={logo} alt="logo" className="w-[169px]h-[48px]" />
@@ -70,7 +71,14 @@ function NavBar() {
             // check if the label is cart
             if (item.label === "Cart") {
               return (
-                <div>
+                <Tooltip
+                  title={"View the " + item.label}
+                  // change the theme of the tooltip
+                  placement="bottom"
+                  arrow
+                  // change the font size of the tooltip
+                  fontSize="1.2rem"
+                >
                   <Link
                     to={item.to}
                     key={index}
@@ -90,7 +98,7 @@ function NavBar() {
                       {item.label}
                     </span>
                   </Link>
-                </div>
+                </Tooltip>
               );
             } else {
               return (
