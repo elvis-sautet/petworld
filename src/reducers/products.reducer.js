@@ -453,7 +453,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "sdklfnwer092342i3or209384#uws",
+      id: "sdklfnwer092342i3or20938400uws",
       productName: `NAXOS
 ADULT MAXI
 PORK AND CITRUS`,
@@ -615,7 +615,7 @@ FISH AND RICE`,
       },
     },
     {
-      id: "@#ERwserkj34y5kzhfrwer",
+      id: "2323ERwserkj34y5kzhfrwer",
       productName:
         "Truly Chicken Filet Is A 100% Natural Snack Made From Fresh Chicken Filets. Good For The Teath And An All-round Great Chew",
       productPrice: {
@@ -728,7 +728,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
     },
 
     {
-      id: "ksjhfiweury#$%#%ertkejryt",
+      id: "ksjhfiweury3457567ertkejryt",
       productName:
         "Generic CAT COLLAR (8 MONTHS PROTECTION FROM FLEA, TICK & PEST)",
       productPrice: {
@@ -781,7 +781,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "as,kryi23651715^%#^#$askd",
+      id: "as00kryi236517155656bnmaskd",
       productName: `CAT&CO
       CAT&CO PATÈ
       CHICKEN AND TURKEY`,
@@ -835,7 +835,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "skldfo0w94357n3257b34b5qwe192&6",
+      id: "skldfo0w94357n3257b34b5qwe1925675676",
       productName: "King Plus Adult Dog Food – Beef 15kg",
       productPrice: {
         salePrice: "3150",
@@ -893,7 +893,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "ASJKFHWI3B467866585747$%#$%&",
+      id: "sfkajsw342309842akjs384skdj",
       productName:
         "Truly Bone Snacks Is A Unique And Irresistible Combination Of Rawhide And Delicious Chicken Pieces",
       productPrice: {
@@ -946,7 +946,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "s;aljdowie7r23cbskdjf%^$^%23j4sd",
+      id: "fireonfire",
       productName:
         "Reflex Plus REFLEX PREMIUM ADULT CAT FOOD – HAIRBALL & INDOOR SALMON 1.5KG",
       productPrice: {
@@ -999,7 +999,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "aslkdflasy&%$bjhdvkdlfgl",
+      id: "aslkdflasy945845945bjhdvkdlfgl",
       productName:
         "King High Quality Plus Adult Cat Food – Adult Premium Fish 1.5kg",
       productPrice: {
@@ -1052,7 +1052,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "sdm,fnlweuiowe$%^#WErsdlkfns",
+      id: "ert456dfhgr64ydfyetrw345edfhrtu",
       productName: `CAT&CO
 CAT&CO CHUNCKS
 GAME`,
@@ -1166,7 +1166,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
     },
 
     {
-      id: "3423lloiswq999-823hkjsdf",
+      id: "3423lloiswq9999459fger823hkjsdf",
       productName:
         "Uncooked Dog Food With Protein Mix Salt Among Other Nutrients",
       productPrice: {
@@ -1333,7 +1333,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "OIUOGH093845NZXCE2-Q231YZSGDJ",
+      id: "OIUOGH093845NZXCE20873Q231YZSGDJ",
       productName: `ERYX
 ERYX DAILY
 CHICKEN`,
@@ -1388,7 +1388,7 @@ CHICKEN`,
     },
 
     {
-      id: "JSDHFASPROWEUPT5W9EUSDKJH-SDGRIW12314",
+      id: "JSDHFASPROWEUPT5W9EUSDKJH34509xkfghklhe4SDGRIW12314",
       productName: `CAT&CO WELLNESS
 ADULT STERILIZED
 CHICKEN AND BARLEY`,
@@ -1442,7 +1442,7 @@ CHICKEN AND BARLEY`,
       },
     },
     {
-      id: "QIUTRYMXZZAWIRBDKITMZ28587323",
+      id: "QIUTRYMXZZAWIRBDKITMZ2858732erte3",
       productName: `CAT&CO
 PATÈ
 TUNA`,

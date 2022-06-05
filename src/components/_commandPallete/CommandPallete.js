@@ -8,7 +8,6 @@ import {
   OPEN_COMMAND_PALLETE,
 } from "../../actions/types";
 import { useSelector, useDispatch } from "react-redux";
-import PRODUCTS from "../../_mocks_/products";
 
 function descendingComparator(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
@@ -48,6 +47,7 @@ function CommandPallete() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { isOpen } = useSelector((state) => state.commandPallete);
+  const { products: PRODUCTS } = useSelector((state) => state?.products);
 
   //   const { comand: STAFFDATA } = useSelector((state) => state?.staff);
 

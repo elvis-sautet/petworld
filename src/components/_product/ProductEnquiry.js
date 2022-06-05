@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { Fragment, useEffect, useMemo, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import Product from "../../components/_product/Product";
 import { Icon } from "@iconify/react";
@@ -17,6 +17,8 @@ import SimilarProductsSlide from "./related-products-slide";
 import CustomersAlsoSearched from "./customers-also-searched";
 import YouMayAlsoLike from "./you-may-also-like";
 import { LOCAL_STORAGE_CACHED_DATABASE } from "../../reducers/products.reducer";
+import { Menu, Popover, Transition } from "@headlessui/react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 function ProductItem() {
   const dispatch = useDispatch();
@@ -26,12 +28,27 @@ function ProductItem() {
   const { id } = useParams();
   const [showMore, setShowMore] = useState(false);
   const [productLength, setProductLength] = React.useState(0);
+  const [copyStateClipboard, setCopyStateClipboard] = React.useState({
+    copied: false,
+    text: "",
+  });
+
+  useEffect(() => {
+    if (copyStateClipboard.copied) {
+      // reset the copied state
+      setTimeout(() => {
+        setCopyStateClipboard({
+          copied: false,
+          text: "",
+        });
+      }, 2000);
+    }
+  }, [copyStateClipboard.copied, dispatch]);
 
   const { products, error, loading, viewedProducts } = useSelector(
     (state) => state?.products
   );
   // scroll to top
-
   // function to scroll to top when page is loaded
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -247,11 +264,34 @@ function ProductItem() {
     }
   }
 
+  const shareSocialIconsSample = [
+    {
+      label: "whatsapp",
+      icon: require("../../images/whatzapp.png"),
+    },
+    {
+      label: "facebook",
+      icon: require("../../images/facebook.png"),
+    },
+    {
+      label: "twitter",
+      icon: require("../../images/twitter.png"),
+    },
+    {
+      label: "instagram",
+      icon: require("../../images/instagram.png"),
+    },
+    {
+      label: "youtube",
+      icon: require("../../images/youtube.png"),
+    },
+  ];
+
   return (
     <Page title={`Enquiry of ${productFound?.productName}`}>
       <div className="">
         <div className="lg:px-10 sm:px-3">
-          <div className="bg-white lg:grid lg:grid-cols-3 gap-1 ">
+          <div className="bg-white lg:grid lg:grid-cols-3 gap-1 p-3">
             {/* show the product and its image */}
             <div className="lg:flex lg:flex-row-reverse lg:place-content-start lg:col-span-2 gap-3 p-3 ">
               <div className="flex py-6 h-full w-full">
@@ -334,17 +374,180 @@ function ProductItem() {
               </div>
 
               {/* wishlist and share */}
-              <div className="mt-2 lg:flex lg:gap-3">
+              <div className="mt-2 space-y-2 sm:space-y-0 lg:flex lg:gap-3">
                 {/* wishlist */}
-                <button className="flex space-x-2 items-center text-sm text-center justify-center w-full border border-gray-300 rounded-sm text-gray-500 h-10 hover:text-fountain-blue py-2">
+                <button className="flex space-x-2 items-center text-sm text-center justify-center w-full border border-gray-300 rounded-sm text-gray-500 h-10 hover:text-secondary-main py-2">
                   <Icon icon="akar-icons:heart" />
                   <span className="tracking-wide">Wishlist</span>
                 </button>
                 {/* share */}
-                <button className="flex space-x-2 items-center text-sm text-center justify-center w-full border border-gray-300 rounded-sm hover:text-fountain-blue text-gray-500 py-2 h-10">
-                  <Icon icon="eva:share-fill" />
-                  <span className="tracking-wide">Share</span>
-                </button>
+                <Popover className="relative w-full flex">
+                  {({ open }) => (
+                    <>
+                      <Popover.Button className="!flex !space-x-2 !items-center !text-sm !text-center !justify-center !w-full !border !border-gray-300 !rounded-sm !hover:text-fountain-blue !text-gray-500 !py-2 !h-10">
+                        <Icon icon="eva:share-fill" />
+                        <span className="tracking-wide">Share</span>
+                      </Popover.Button>
+                      <Transition
+                        as={Fragment}
+                        enter="transition ease-out duration-100"
+                        enterFrom="transform opacity-0 scale-95"
+                        enterTo="transform opacity-100 scale-100"
+                        leave="transition ease-in duration-75"
+                        leaveFrom="transform opacity-100 scale-100"
+                        leaveTo="transform opacity-0 scale-95"
+                      >
+                        <Popover.Panel className="absolute left-1/2 lg:left-0 top-8 inset-0 bottom-0 z-10 mt-3 !w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-sm">
+                          <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5"></div>
+                          <div className="relative bg-white p-7 ">
+                            <h2 className="font-semibold text-lg lg:text-lg">
+                              Share in social network
+                            </h2>
+                            <p className="text-gray-600 text-sm ">
+                              To reach the highest traffic view share this
+                              product
+                            </p>
+                            <div className="mt-4 flex items-center w-full">
+                              {shareSocialIconsSample?.map((icon, index) => {
+                                // if the icon is whatsapp, make a link of the current url and share it
+                                if (icon.label === "whatsapp") {
+                                  return (
+                                    <a
+                                      key={index}
+                                      href={`https://wa.me/?text=${window.location.href}`}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="text-gray-600 text-sm hover:text-secondary-main"
+                                    >
+                                      <img
+                                        key={index}
+                                        src={icon.icon}
+                                        alt="social icon"
+                                        className="w-9 h-9 object-contain mr-2"
+                                      />
+                                    </a>
+                                  );
+                                }
+                                // if the icon is facebook, make a link of the current url and share it
+                                if (icon.label === "facebook") {
+                                  return (
+                                    <a
+                                      key={index}
+                                      href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="text-gray-600 text-sm hover:text-secondary-main"
+                                    >
+                                      <img
+                                        key={index}
+                                        src={icon.icon}
+                                        alt="social icon"
+                                        className="w-9 h-9 object-contain mr-2"
+                                      />
+                                    </a>
+                                  );
+                                }
+                                // if the icon is twitter, make a link of the current url and share it
+                                if (icon.label === "twitter") {
+                                  return (
+                                    <a
+                                      key={index}
+                                      href={`https://twitter.com/intent/tweet?text=${window.location.href}`}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="text-gray-600 text-sm hover:text-secondary-main"
+                                    >
+                                      <img
+                                        key={index}
+                                        src={icon.icon}
+                                        alt="social icon"
+                                        className="w-9 h-9 object-contain mr-2"
+                                      />
+                                    </a>
+                                  );
+                                }
+
+                                // if the icon is youtube, make a link of the current url and share it
+                                if (icon.label === "youtube") {
+                                  // www.youtube.com/watch?v=
+                                  return (
+                                    <a
+                                      key={index}
+                                      href={`${window.location.href}`}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="text-gray-600 text-sm hover:text-secondary-main"
+                                    >
+                                      <img
+                                        key={index}
+                                        src={icon.icon}
+                                        alt="social icon"
+                                        className="w-9 h-9 object-contain mr-2"
+                                      />
+                                    </a>
+                                  );
+                                }
+                                // if the icon is instagram, make a post to instagram of the current url and share it
+                                if (icon.label === "instagram") {
+                                  return (
+                                    <a
+                                      key={index}
+                                      href={`https://www.instagram.com/intent/post/?text=${window.location.href}`}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="text-gray-600 text-sm hover:text-secondary-main"
+                                    >
+                                      <img
+                                        key={index}
+                                        src={icon.icon}
+                                        alt="social icon"
+                                        className="w-9 h-9 object-contain mr-2"
+                                      />
+                                    </a>
+                                  );
+                                }
+                              })}
+                            </div>
+                            <div
+                              className="flex  items-center space-x-2 mt-3
+                            focus:ring-tertiary-main focus:ring-1
+                            "
+                            >
+                              <CopyToClipboard
+                                text={window.location.href}
+                                onCopy={() =>
+                                  setCopyStateClipboard({
+                                    copied: true,
+                                    text: window.location.href,
+                                  })
+                                }
+                              >
+                                <div className="rounded-sm  space-x-2 px-4 text-sm flex justify-between items-center w-full border h-10  text-black font-semibold tracking-wide py-2 border-secondary-main ">
+                                  <input
+                                    type="text"
+                                    value={window.location.href}
+                                    className="text-sm w-full focus:outline-none border-none  focus:border-none cursor-text"
+                                    readOnly
+                                  />
+                                  {copyStateClipboard.copied ? (
+                                    <span className="text-secondary-main cursor-pointer">
+                                      Copied!
+                                    </span>
+                                  ) : (
+                                    <span className="text-black bg-white cursor-pointer">
+                                      Copy
+                                    </span>
+                                  )}
+                                </div>
+                              </CopyToClipboard>
+                            </div>
+                            {/* copy link */}
+                          </div>
+                        </Popover.Panel>
+                      </Transition>
+                    </>
+                  )}
+                </Popover>
               </div>
 
               {/* tags */}
