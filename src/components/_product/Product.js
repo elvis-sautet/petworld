@@ -34,36 +34,36 @@ function Product(props) {
   );
 
   return (
-    <div className="relative cursor-pointer bg-white p-4 rounded-sm text-sm flex-grow-0 z-30 hover:shadow-2xl shadow-slate-200">
-      {/* absolute positioned percentge */}
-      <div className="absolute top-0 right-0 mr-6 mt-2 z-40">
-        <div className="text-sm px-6 py-[3px] rounded-md bg-tertiary-main/20 text-secondary-main">
-          -{discountPercentage.toFixed(0)}%
+    <Link to={`/home/product/${props.id}`}>
+      <div className="relative cursor-pointer bg-white p-4 rounded-sm text-sm flex-grow-0 z-30 hover:shadow-2xl shadow-slate-200">
+        {/* absolute positioned percentge */}
+        <div className="absolute top-0 right-0 mr-6 mt-2 z-40">
+          <div className="text-sm px-6 py-[3px] rounded-md bg-tertiary-main/20 text-secondary-main">
+            -{discountPercentage.toFixed(0)}%
+          </div>
         </div>
-      </div>
-      {/* image of the product */}
-      <div className="bg-white relative">
-        <Carousel autoplay>
-          <img
-            className="object-contain h-40 w-40 hover:scale-105 transition-all cursor-pointer ease-in-out"
-            src={props.productGallery?.productImage}
-            alt="this is the product_image"
-          />
-        </Carousel>
-      </div>
-      {/* STAR RATING */}
-      <div className="flex mt-4 space-x-1">
-        {Array(rating)
-          .fill()
-          .map((_, i) => (
-            <StarIcon
-              key={i}
-              className="text-secondary-main fill-current h-[19px]"
+        {/* image of the product */}
+        <div className="bg-white relative">
+          <Carousel autoplay>
+            <img
+              className="object-contain h-40 w-40 hover:scale-105 transition-all cursor-pointer ease-in-out"
+              src={props.productGallery?.productImage}
+              alt="this is the product_image"
             />
-          ))}
-      </div>
-      {/* TODO:change the id */}
-      <Link to={`/home/product/${props.id}`}>
+          </Carousel>
+        </div>
+        {/* STAR RATING */}
+        <div className="flex mt-4 space-x-1">
+          {Array(rating)
+            .fill()
+            .map((_, i) => (
+              <StarIcon
+                key={i}
+                className="text-secondary-main fill-current h-[19px]"
+              />
+            ))}
+        </div>
+        {/* TODO:change the id */}
         <p className="text-black line-clamp-1 text-[16px]  tracking-wide mt-1">
           {props.productName}
         </p>
@@ -92,8 +92,8 @@ function Product(props) {
             ></div>
           </div>
         </div>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 }
 

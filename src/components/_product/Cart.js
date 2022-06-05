@@ -5,7 +5,6 @@ import { numberWithCommas } from "../../utils/productUtils";
 import { useDispatch, useSelector } from "react-redux";
 import { ADD_TO_CART, REMOVE_FROM_CART, CLEAN_CART } from "../../actions/types";
 import { MinusIcon, PlusIcon } from "@heroicons/react/solid";
-import { v4 as uuidv4 } from "uuid";
 import CartSlider from "./cart-slide";
 import {
   Button,

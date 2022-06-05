@@ -76,15 +76,14 @@ const initialState = {
     },
     {
       id: "asjfhasf238ksjdf093",
-      productName:
-        "Reflex Plus REFLEX PREMIUM ADULT CAT FOOD – HAIRBALL & INDOOR SALMON 1.5KG",
+      productName: "ROYAL CANIN MAXI PUPPY – 15KG",
       productPrice: {
-        salePrice: "2240",
+        salePrice: "13050",
         regularPrice: "14170",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/58/997606/1.jpg?0432",
+          "https://petstore.co.ke/wp-content/uploads/2021/10/ROC-SHMX-021-300x300.jpg",
         productImages: [],
       },
       productDescription: `Reflex Plus Adult Cat – Hairball & Indoor Salmon is a premium cat food for all adult breeds (over 12 months old) prone to hairballs, like long-haired breeds and indoor cats. With salmon protein and psyllium husk to help pass digested hairballs, formulated by cat / dog nutritionists to meet your cat’s daily nutritional needs.`,
@@ -129,15 +128,14 @@ const initialState = {
     },
     {
       id: "aklshf23480ksjd",
-      productName:
-        "King High Quality Plus Adult Cat Food – Adult Premium Fish 1.5kg",
+      productName: "ROYAL CANIN MAXI ADULT – 15KG",
       productPrice: {
-        salePrice: "760",
-        regularPrice: "1000",
+        salePrice: "11475",
+        regularPrice: "13480",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/95/221385/1.jpg?1570",
+          "https://petstore.co.ke/wp-content/uploads/2021/12/Royal-Canin-Maxi-Adult-01-300x300.jpg",
         productImages: [],
       },
       productDescription: `Reflex Plus Adult Cat – Hairball & Indoor Salmon is a premium cat food for all adult breeds (over 12 months old) prone to hairballs, like long-haired breeds and indoor cats. With salmon protein and psyllium husk to help pass digested hairballs, formulated by cat / dog nutritionists to meet your cat’s daily nutritional needs.`,
@@ -240,15 +238,14 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
     },
     {
       id: "ansdkajs284klksjdf23",
-      productName:
-        "Reflex Plus REFLEX PREMIUM ADULT CAT FOOD HAIRBALL & INDOOR SALMON 1.5KG",
+      productName: "ROYAL CANIN MAXI ADULT – 10KG",
       productPrice: {
         salePrice: "1470",
         regularPrice: "2200",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/58/997606/1.jpg?0432",
+          "https://petstore.co.ke/wp-content/uploads/2021/12/Royal-Canin-Maxi-Adult-01-300x300.jpg",
         productImages: [],
       },
       productDescription: `Reflex Plus Adult Cat – Hairball & Indoor Salmon is a premium cat food for all adult breeds (over 12 months old) prone to hairballs, like long-haired breeds and indoor cats. With salmon protein and psyllium husk to help pass digested hairballs, formulated by cat / dog nutritionists to meet your cat’s daily nutritional needs.`,
@@ -295,14 +292,14 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
     {
       id: "kasfhoi0j934hsayyt3e",
       productName:
-        "Top Dog Regular Uncooked Dog Food With Protein Mix Salt Among Other Nutrients",
+        "SPECTRUM ULTRA PREMIUM PUPPY FOOD – PUPPY STARTER30 SMALL / MEDIUM BREED 3KG",
       productPrice: {
         salePrice: "2280",
         regularPrice: "5490",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/41/340866/1.jpg?5195",
+          "https://petstore.co.ke/wp-content/uploads/2019/02/Puppy30-01.jpg",
         productImages: [],
       },
       productDescription: `Reflex Plus Adult Cat – Hairball & Indoor Salmon is a premium cat food for all adult breeds (over 12 months old) prone to hairballs, like long-haired breeds and indoor cats. With salmon protein and psyllium husk to help pass digested hairballs, formulated by cat / dog nutritionists to meet your cat’s daily nutritional needs.`,
@@ -346,18 +343,18 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "pweur23oasdmbn,c239csi",
-      productName: "Munch & Crunch Pressed Bones - 3 Pieces",
+      id: "pweur23oasdmbnfc239csi",
+      productName: "Adragna Professional Breeder",
       productPrice: {
         salePrice: "1500",
         regularPrice: "1700",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/27/457985/1.jpg?0723",
+          "https://adragna.it/wp-content/uploads/2021/05/breeder-super-premium-2014.png",
         productImages: [],
       },
-      productDescription: `Reflex Plus Adult Cat – Hairball & Indoor Salmon is a premium cat food for all adult breeds (over 12 months old) prone to hairballs, like long-haired breeds and indoor cats. With salmon protein and psyllium husk to help pass digested hairballs, formulated by cat / dog nutritionists to meet your cat’s daily nutritional needs.`,
+      productDescription: `Professional Breeder Super Premium is a complete dog food, able to satisfy the different nutritional needs and tastes of dogs of all sizes and according to the various stages of life.`,
       productCategory: {
         categoryName: "Food",
         subCategoryName: "Cat Food",
@@ -398,15 +395,15 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "pweur23oasdmbn,c239csi",
-      productName: "King Plus Adult Dog Food – Beef 15kg",
+      id: "pweur23oasdmjkc239csi",
+      productName: "ADRAGNA BREEDER PREMIUM",
       productPrice: {
         salePrice: "3150",
         regularPrice: "4600",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/51/527585/1.jpg?7746",
+          "https://adragna.it/wp-content/uploads/2021/05/breeder-premium-2014-400x400.png",
         productImages: [],
       },
       productDescription: `SuperDog Joints & Bones pet supplements contain a unique all-in-one combination of joint health ingredients as well as essential vitamins to promote overall wellbeing, help maintain flexibility and keep your dog active.
@@ -456,16 +453,17 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "sdklfnwer092342i3or209384#uws",
-      productName:
-        "Truly Bone Snacks Is A Unique And Irresistible Combination Of Rawhide And Delicious Chicken Pieces",
+      id: "sdklfnwer092342i3or20938400uws",
+      productName: `NAXOS
+ADULT MAXI
+PORK AND CITRUS`,
       productPrice: {
         salePrice: "650",
         regularPrice: "800",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/10/244476/1.jpg?4182",
+          "https://adragna.it/wp-content/uploads/2021/05/adult-medium-bufalo-e-agrumi-400x400.png",
         productImages: [],
       },
       productDescription: `Reflex Plus Adult Cat – Hairball & Indoor Salmon is a premium cat food for all adult breeds (over 12 months old) prone to hairballs, like long-haired breeds and indoor cats. With salmon protein and psyllium husk to help pass digested hairballs, formulated by cat / dog nutritionists to meet your cat’s daily nutritional needs.`,
@@ -511,15 +509,16 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
 
     {
       id: "laksdjjw892374yo2i3jklasdai7eq",
-      productName:
-        "Pawise Dog And Cat Brush With Plastic Teeth For Grooming Of All Short, Medium Or Long-haired Pets",
+      productName: `DOG&CO WELLNESS
+ADULT MEDIUM/MAXI
+FISH AND RICE`,
       productPrice: {
         salePrice: "1550",
         regularPrice: "1800",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/27/965156/1.jpg?3928",
+          "https://adragna.it/wp-content/uploads/2021/05/adult-medium-maxi-pesce-e-riso-400x400.png",
         productImages: [],
       },
       productDescription: `Reflex Plus Adult Cat – Hairball & Indoor Salmon is a premium cat food for all adult breeds (over 12 months old) prone to hairballs, like long-haired breeds and indoor cats. With salmon protein and psyllium husk to help pass digested hairballs, formulated by cat / dog nutritionists to meet your cat’s daily nutritional needs.`,
@@ -616,7 +615,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "@#ERwserkj34y5kzhfrwer",
+      id: "2323ERwserkj34y5kzhfrwer",
       productName:
         "Truly Chicken Filet Is A 100% Natural Snack Made From Fresh Chicken Filets. Good For The Teath And An All-round Great Chew",
       productPrice: {
@@ -729,7 +728,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
     },
 
     {
-      id: "ksjhfiweury#$%#%ertkejryt",
+      id: "ksjhfiweury3457567ertkejryt",
       productName:
         "Generic CAT COLLAR (8 MONTHS PROTECTION FROM FLEA, TICK & PEST)",
       productPrice: {
@@ -782,15 +781,17 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "as,kryi23651715^%#^#$askd",
-      productName: "Munch & Crunch Pressed Bones - 3 Pieces",
+      id: "as00kryi236517155656bnmaskd",
+      productName: `CAT&CO
+      CAT&CO PATÈ
+      CHICKEN AND TURKEY`,
       productPrice: {
         salePrice: "1500",
         regularPrice: "1700",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/27/457985/1.jpg?0723",
+          "https://adragna.it/wp-content/uploads/2021/05/pate-pollotacc400-400x400.png",
         productImages: [],
       },
       productDescription: `Reflex Plus Adult Cat – Hairball & Indoor Salmon is a premium cat food for all adult breeds (over 12 months old) prone to hairballs, like long-haired breeds and indoor cats. With salmon protein and psyllium husk to help pass digested hairballs, formulated by cat / dog nutritionists to meet your cat’s daily nutritional needs.`,
@@ -834,7 +835,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "skldfo0w94357n3257b34b5qwe192&6",
+      id: "skldfo0w94357n3257b34b5qwe1925675676",
       productName: "King Plus Adult Dog Food – Beef 15kg",
       productPrice: {
         salePrice: "3150",
@@ -892,7 +893,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "ASJKFHWI3B467866585747$%#$%&",
+      id: "sfkajsw342309842akjs384skdj",
       productName:
         "Truly Bone Snacks Is A Unique And Irresistible Combination Of Rawhide And Delicious Chicken Pieces",
       productPrice: {
@@ -945,7 +946,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "s;aljdowie7r23cbskdjf%^$^%23j4sd",
+      id: "fireonfire",
       productName:
         "Reflex Plus REFLEX PREMIUM ADULT CAT FOOD – HAIRBALL & INDOOR SALMON 1.5KG",
       productPrice: {
@@ -998,7 +999,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "aslkdflasy&%$bjhdvkdlfgl",
+      id: "aslkdflasy945845945bjhdvkdlfgl",
       productName:
         "King High Quality Plus Adult Cat Food – Adult Premium Fish 1.5kg",
       productPrice: {
@@ -1051,15 +1052,17 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: "sdm,fnlweuiowe$%^#WErsdlkfns",
-      productName: "Vitabiotics SUPERDOG JOINT&BONES 60TABLETS TIN",
+      id: "ert456dfhgr64ydfyetrw345edfhrtu",
+      productName: `CAT&CO
+CAT&CO CHUNCKS
+GAME`,
       productPrice: {
         salePrice: "2240",
         regularPrice: "14170",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/51/641925/1.jpg?2823",
+          "https://adragna.it/wp-content/uploads/2021/05/bocc-selvaggina400-400x400.png",
         productImages: [],
       },
       productDescription: `SuperDog Joints & Bones pet supplements contain a unique all-in-one combination of joint health ingredients as well as essential vitamins to promote overall wellbeing, help maintain flexibility and keep your dog active.
@@ -1109,7 +1112,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: uuidv4(),
+      id: "5345idjkfghdf0892340923409kdhgksjd",
       productName:
         "Reflex Plus REFLEX PREMIUM ADULT CAT FOOD HAIRBALL & INDOOR SALMON 1.5KG",
       productPrice: {
@@ -1163,16 +1166,16 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
     },
 
     {
-      id: uuidv4(),
+      id: "3423lloiswq9999459fger823hkjsdf",
       productName:
-        "Top Dog Regular Uncooked Dog Food With Protein Mix Salt Among Other Nutrients",
+        "Uncooked Dog Food With Protein Mix Salt Among Other Nutrients",
       productPrice: {
         salePrice: "2280",
         regularPrice: "5490",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/41/340866/1.jpg?5195",
+          "https://adragna.it/wp-content/uploads/2021/05/puppy-medium-pollo-e-agrumi-400x400.png",
         productImages: [],
       },
       productDescription: `Reflex Plus Adult Cat – Hairball & Indoor Salmon is a premium cat food for all adult breeds (over 12 months old) prone to hairballs, like long-haired breeds and indoor cats. With salmon protein and psyllium husk to help pass digested hairballs, formulated by cat / dog nutritionists to meet your cat’s daily nutritional needs.`,
@@ -1216,15 +1219,17 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: uuidv4(),
-      productName: "Munch & Crunch Pressed Bones - 3 Pieces",
+      id: "KLSDJFLSKDJFL8923KSJDFH",
+      productName: `CAT&CO
+CAT&CO MAINTENANCE
+MIX BEEF AND CHICKEN`,
       productPrice: {
         salePrice: "1500",
         regularPrice: "1700",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/27/457985/1.jpg?0723",
+          "https://adragna.it/wp-content/uploads/2021/05/pack-catco-manzo-20-400x400.png",
         productImages: [],
       },
       productDescription: `Reflex Plus Adult Cat – Hairball & Indoor Salmon is a premium cat food for all adult breeds (over 12 months old) prone to hairballs, like long-haired breeds and indoor cats. With salmon protein and psyllium husk to help pass digested hairballs, formulated by cat / dog nutritionists to meet your cat’s daily nutritional needs.`,
@@ -1268,15 +1273,17 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: uuidv4(),
-      productName: "King Plus Adult Dog Food – Beef 15kg",
+      id: "IASJFHIO38945NMDFGLKDbd094",
+      productName: `DOG&CO
+DOG&CO CHUNCKS
+CHICKEN AND TURKEY`,
       productPrice: {
         salePrice: "3150",
         regularPrice: "4600",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/51/527585/1.jpg?7746",
+          "https://adragna.it/wp-content/uploads/2021/05/dogco-bocc-pollotacchino-400x400.png",
         productImages: [],
       },
       productDescription: `SuperDog Joints & Bones pet supplements contain a unique all-in-one combination of joint health ingredients as well as essential vitamins to promote overall wellbeing, help maintain flexibility and keep your dog active.
@@ -1326,16 +1333,17 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: uuidv4(),
-      productName:
-        "Truly Bone Snacks Is A Unique And Irresistible Combination Of Rawhide And Delicious Chicken Pieces",
+      id: "OIUOGH093845NZXCE20873Q231YZSGDJ",
+      productName: `ERYX
+ERYX DAILY
+CHICKEN`,
       productPrice: {
         salePrice: "650",
         regularPrice: "800",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/10/244476/1.jpg?4182",
+          "https://adragna.it/wp-content/uploads/2021/05/eryx-daily-pollo-400x400.png",
         productImages: [],
       },
       productDescription: `Reflex Plus Adult Cat – Hairball & Indoor Salmon is a premium cat food for all adult breeds (over 12 months old) prone to hairballs, like long-haired breeds and indoor cats. With salmon protein and psyllium husk to help pass digested hairballs, formulated by cat / dog nutritionists to meet your cat’s daily nutritional needs.`,
@@ -1380,16 +1388,17 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
     },
 
     {
-      id: uuidv4(),
-      productName:
-        "Pawise Dog And Cat Brush With Plastic Teeth For Grooming Of All Short, Medium Or Long-haired Pets",
+      id: "JSDHFASPROWEUPT5W9EUSDKJH34509xkfghklhe4SDGRIW12314",
+      productName: `CAT&CO WELLNESS
+ADULT STERILIZED
+CHICKEN AND BARLEY`,
       productPrice: {
         salePrice: "1550",
         regularPrice: "1800",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/27/965156/1.jpg?3928",
+          "https://adragna.it/wp-content/uploads/2021/05/sterilized-10-400x400.png",
         productImages: [],
       },
       productDescription: `Reflex Plus Adult Cat – Hairball & Indoor Salmon is a premium cat food for all adult breeds (over 12 months old) prone to hairballs, like long-haired breeds and indoor cats. With salmon protein and psyllium husk to help pass digested hairballs, formulated by cat / dog nutritionists to meet your cat’s daily nutritional needs.`,
@@ -1433,16 +1442,17 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: uuidv4(),
-      productName:
-        "Truly Calcium Bone Is A Unique And Irresistibly Combination Of Pieces Of Chicken Filet And Chew Bones, With Extra Calcium For Strong Bones",
+      id: "QIUTRYMXZZAWIRBDKITMZ2858732erte3",
+      productName: `CAT&CO
+PATÈ
+TUNA`,
       productPrice: {
         salePrice: "850",
         regularPrice: "1000",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/34/404476/1.jpg?3301",
+          "https://adragna.it/wp-content/uploads/2021/05/pate-tonno400-400x400.png",
         productImages: [],
       },
       productDescription: `Reflex Plus Adult Cat – Hairball & Indoor Salmon is a premium cat food for all adult breeds (over 12 months old) prone to hairballs, like long-haired breeds and indoor cats. With salmon protein and psyllium husk to help pass digested hairballs, formulated by cat / dog nutritionists to meet your cat’s daily nutritional needs.`,
@@ -1486,16 +1496,16 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: uuidv4(),
-      productName:
-        "Truly Chicken Filet Is A 100% Natural Snack Made From Fresh Chicken Filets. Good For The Teath And An All-round Great Chew",
+      id: "lkmlvnlt090093-34jhgdfs",
+      productName: `DOG&CO
+DOG&CO PUPPY & JUNIOR`,
       productPrice: {
         salePrice: "2240",
         regularPrice: "14170",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/43/404476/1.jpg?3303",
+          "https://adragna.it/wp-content/uploads/2021/05/dog-junior-400x400.png",
         productImages: [],
       },
       productDescription: `SuperDog Joints & Bones pet supplements contain a unique all-in-one combination of joint health ingredients as well as essential vitamins to promote overall wellbeing, help maintain flexibility and keep your dog active.
@@ -1545,16 +1555,17 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
     },
     {
-      id: uuidv4(),
-      productName:
-        "Generic Flea And Tick Collar For Cat, Made With Natural Plant Based Essential Oil, Safe And Effective Repels Fleas And Ticks, Waterproof",
+      id: "lkmlvnl444t-090093-34jhgdfs",
+      productName: `ERYX
+ERYX PUPPY
+CHICKEN`,
       productPrice: {
         salePrice: "469",
         regularPrice: "999",
       },
       productGallery: {
         productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/05/554506/1.jpg?2816",
+          "https://adragna.it/wp-content/uploads/2021/05/eryx-daily-junior-400x400.png",
         productImages: [],
       },
       productDescription: `Reflex Plus Adult Cat – Hairball & Indoor Salmon is a premium cat food for all adult breeds (over 12 months old) prone to hairballs, like long-haired breeds and indoor cats. With salmon protein and psyllium husk to help pass digested hairballs, formulated by cat / dog nutritionists to meet your cat’s daily nutritional needs.`,
