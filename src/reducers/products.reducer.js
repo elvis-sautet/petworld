@@ -21,24 +21,182 @@ async function getViewedProducts() {
 const initialState = {
   products: [
     {
-      id: "nklsfi20934klhf",
-      productName: "Reflex Kitten Food -Chicken & Rice 2kg",
+      id: "Eryx-w423kjhsd324j-23424klsfi20934klhf",
+      productName: "erix active",
       productPrice: {
         salePrice: "1740",
         regularPrice: "1840",
       },
       productGallery: {
-        productImage:
-          "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/60/911385/1.jpg?0643",
+        productImage: require("../images/erics/erix active.jpg"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
     Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
       productCategory: {
-        categoryName: "Food",
-        subCategoryName: "Cat Food",
+        categoryName: "Eryx",
+        subCategoryName: "Eryx",
       },
-      productBrand: "Reflex",
+      productBrand: "Eryx",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "60",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "Eryx-234kashdjashdlashd",
+      productName: "erix daily chicken 3 kg",
+      productPrice: {
+        salePrice: "1740",
+        regularPrice: "1840",
+      },
+      productGallery: {
+        productImage: require("../images/erics/erix daily chicken 3 kg.jpg"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "Eryx",
+        subCategoryName: "Eryx",
+      },
+      productBrand: "Eryx",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "42",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "Eryx-kashdjashdlauuyt",
+      productName: "erix daily chicken",
+      productPrice: {
+        salePrice: "1740",
+        regularPrice: "1840",
+      },
+      productGallery: {
+        productImage: require("../images/erics/erix daily chicken.jpg"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "Eryx",
+        subCategoryName: "Eryx",
+      },
+      productBrand: "Eryx",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "32",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "Eryx-jkhsj-345bwkashdjashdlauuytnajskdna",
+      productName: "erix daily fish",
+      productPrice: {
+        salePrice: "1740",
+        regularPrice: "1840",
+      },
+      productGallery: {
+        productImage: require("../images/erics/erix daily fish.jpg"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "Eryx",
+        subCategoryName: "Eryx",
+      },
+      productBrand: "Eryx",
       // productStock is the product quantity in stock or the original quantity.
       productStock: "10",
       // quantity of items left in stock
@@ -75,27 +233,27 @@ const initialState = {
       // product rating between 1 to 5
     },
     {
-      id: "asjfhasf238ksjdf093",
-      productName: "ROYAL CANIN MAXI PUPPY – 15KG",
+      id: "Eryx-kashdjashdlauuytnajskdnajqwkqjwe",
+      productName: "erix daily lamb 3 kg",
       productPrice: {
-        salePrice: "13050",
-        regularPrice: "14170",
+        salePrice: "1800",
+        regularPrice: "1900",
       },
       productGallery: {
-        productImage:
-          "https://petstore.co.ke/wp-content/uploads/2021/10/ROC-SHMX-021-300x300.jpg",
+        productImage: require("../images/erics/erix daily lamb 3 kg.jpg"),
         productImages: [],
       },
-      productDescription: `Reflex Plus Adult Cat – Hairball & Indoor Salmon is a premium cat food for all adult breeds (over 12 months old) prone to hairballs, like long-haired breeds and indoor cats. With salmon protein and psyllium husk to help pass digested hairballs, formulated by cat / dog nutritionists to meet your cat’s daily nutritional needs.`,
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
       productCategory: {
-        categoryName: "Food",
-        subCategoryName: "Cat Food",
+        categoryName: "Eryx",
+        subCategoryName: "Eryx",
       },
-      productBrand: "Reflex",
+      productBrand: "Eryx",
       // productStock is the product quantity in stock or the original quantity.
-      productStock: "70",
+      productStock: "10",
       // quantity of items left in stock
-      productsLeftInStock: "42",
+      productsLeftInStock: "6",
       productDetails: {
         productReviews: [
           {
@@ -125,8 +283,1730 @@ const initialState = {
           },
         ],
       },
+      // product rating between 1 to 5
     },
     {
+      id: "Eryx-kashdjashdlauuytnajsjqwslkflaksf",
+      productName: "erix daily lamb",
+      productPrice: {
+        salePrice: "2100",
+        regularPrice: "2200",
+      },
+      productGallery: {
+        productImage: require("../images/erics/erix daily lamb.jpg"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "Eryx",
+        subCategoryName: "Eryx",
+      },
+      productBrand: "Eryx",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "10",
+      // quantity of items left in stock
+      productsLeftInStock: "6",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "Eryx-354nbkashdjashdlauuy213fsjqwsa234c3aksf",
+      productName: "erix daily puppy junior 3 kg",
+      productPrice: {
+        salePrice: "1800",
+        regularPrice: "2200",
+      },
+      productGallery: {
+        productImage: require("../images/erics/erix daily puppy junior 3 kg.jpg"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "Eryx",
+        subCategoryName: "Eryx",
+      },
+      productBrand: "Eryx",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "10",
+      // quantity of items left in stock
+      productsLeftInStock: "6",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "Eryx-kashdjashdlauuy213fsjqwsa234c3aksf",
+      productName: "erix dailyfish 3 kg",
+      productPrice: {
+        salePrice: "1600",
+        regularPrice: "2000",
+      },
+      productGallery: {
+        productImage: require("../images/erics/erix dailyfish 3 kg.jpg"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "Eryx",
+        subCategoryName: "Eryx",
+      },
+      productBrand: "Eryx",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "10",
+      // quantity of items left in stock
+      productsLeftInStock: "6",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "dogco-wellness-kashdjashdla234uy213fsjqwsa234c3aksf",
+      productName: "Wellness chicken",
+      productPrice: {
+        salePrice: "1300",
+        regularPrice: "2000",
+      },
+      productGallery: {
+        productImage: require("../images/dog&co wellness/Wellness chicken.jpg"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "dog&co wellness",
+        subCategoryName: "wellness",
+      },
+      productBrand: "dog&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "12",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "dogco-wellness-kashdjashdla234buy21378623wsa234c3aksf",
+      productName: "Wellness fish",
+      productPrice: {
+        salePrice: "1300",
+        regularPrice: "2000",
+      },
+      productGallery: {
+        productImage: require("../images/dog&co wellness/Wellness fish.jpg"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "dog&co wellness",
+        subCategoryName: "wellness",
+      },
+      productBrand: "dog&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "10",
+      // quantity of items left in stock
+      productsLeftInStock: "6",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "dogco-wellness-kashdAJKHashdla234uy21378623wsa234c3aksf",
+      productName: "Wellness Lamb",
+      productPrice: {
+        salePrice: "1300",
+        regularPrice: "2000",
+      },
+      productGallery: {
+        productImage: require("../images/dog&co wellness/Wellness Lamb.jpg"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "dog&co wellness",
+        subCategoryName: "wellness",
+      },
+      productBrand: "dog&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "10",
+      // quantity of items left in stock
+      productsLeftInStock: "6",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "dogco-wellness-kashdAJKHashdla234uy68-21378623wsa234c3aksf",
+      productName: "Wellness Puppy",
+      productPrice: {
+        salePrice: "1600",
+        regularPrice: "2000",
+      },
+      productGallery: {
+        productImage: require("../images/dog&co wellness/Wellness Puppy.jpg"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "dog&co wellness",
+        subCategoryName: "wellness",
+      },
+      productBrand: "dog&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "10",
+      // quantity of items left in stock
+      productsLeftInStock: "6",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "dogco-dry-kashduthAJdog-juniorKHashdla234uy68-21378623wsa234c3aksf",
+      productName: "dog-junior",
+      productPrice: {
+        salePrice: "1700",
+        regularPrice: "2000",
+      },
+      productGallery: {
+        productImage: require("../images/dog&co dry/dog-junior.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "dog&co dry",
+        subCategoryName: "dry",
+      },
+      productBrand: "dog&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "10",
+      // quantity of items left in stock
+      productsLeftInStock: "6",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "dogco-dog-mantenimento-juniorKHashdla234uy68-21378623wsa234c3aksf",
+      productName: "dog-mantenimento",
+      productPrice: {
+        salePrice: "1900",
+        regularPrice: "2300",
+      },
+      productGallery: {
+        productImage: require("../images/dog&co dry/dog-mantenimento.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "dog&co dry",
+        subCategoryName: "dry",
+      },
+      productBrand: "dog&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "10",
+      // quantity of items left in stock
+      productsLeftInStock: "6",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "dogco-dog-wet-jhfwlejf-21378623wsa234c3aksf",
+      productName: "pollo tachino chicken & turkey",
+      productPrice: {
+        salePrice: "2300",
+        regularPrice: "2500",
+      },
+      productGallery: {
+        productImage: require("../images/dog&co wet/dog_co-bocc-pollo_tacchino.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "dog&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "dog&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "10",
+      // quantity of items left in stock
+      productsLeftInStock: "6",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "dogco-dog-wet-jhfwlejf-jksdfjkkh-hkkhkhkj",
+      productName: "bocc coniglio anatra",
+      productPrice: {
+        salePrice: "2300",
+        regularPrice: "2500",
+      },
+      productGallery: {
+        productImage: require("../images/dog&co wet/dog_co-bocc-coniglio_anatra.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "dog&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "dog&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "10",
+      // quantity of items left in stock
+      productsLeftInStock: "6",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "dogco-dog-wet-jhfsdfwlejf-2137skdjf8623wsa234c3aksf",
+      productName: "bocc manzo anatra",
+      productPrice: {
+        salePrice: "2300",
+        regularPrice: "2500",
+      },
+      productGallery: {
+        productImage: require("../images/dog&co wet/dog_co-bocc-manzo.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "dog&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "dog&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "10",
+      // quantity of items left in stock
+      productsLeftInStock: "6",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "dogco-dog-wet-jhfsdfskdfk768wlejf-2137skdjf8623wsa234c3aksf",
+      productName: "coniglio anatra rabbit & duck",
+      productPrice: {
+        salePrice: "2400",
+        regularPrice: "2500",
+      },
+      productGallery: {
+        productImage: require("../images/dog&co wet/dog-pate╠Ç-1.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "dog&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "dog&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "10",
+      // quantity of items left in stock
+      productsLeftInStock: "6",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "dogco-dog-wet-jhfsdfskdfk768wlejf-ashdashdasdd",
+      productName: "co manzo beaf",
+      productPrice: {
+        salePrice: "2200",
+        regularPrice: "2500",
+      },
+      productGallery: {
+        productImage: require("../images/dog&co wet/dog-pate╠Ç-2.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "dog&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "dog&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "63",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "dogco-dog-wet-jhf88876878fskdfk768wlejf-2137skdjf8623wsa234c3aksf",
+      productName: "pollo e tachino chicken & turkey",
+      productPrice: {
+        salePrice: "2200",
+        regularPrice: "2500",
+      },
+      productGallery: {
+        productImage: require("../images/dog&co wet/dog-pate╠Ç-3.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "dog&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "dog&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "55",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "dogco-dog-wet-jhf8xck8876878fskdfk768wlejf-2137skdjf8623wsa234c3aksf",
+      productName: "puppy & Junior",
+      productPrice: {
+        salePrice: "1000",
+        regularPrice: "2500",
+      },
+      productGallery: {
+        productImage: require("../images/dog&co wet/dog-pate╠Ç-4.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "dog&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "dog&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "55",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "cat-co-wet-jhf8xck8h324876878fskdfknmbsd76lejf-2137skdjf8623wsa234c3aksf",
+      productName: "conniglio anatra rabbit & duck",
+      productPrice: {
+        salePrice: "2000",
+        regularPrice: "2500",
+      },
+      productGallery: {
+        productImage: require("../images/cat&co wet/bocc-coniglioanatra400.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "cat&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "cat&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "32",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "cat-co-wet-jhf2342324876878fskdfknmbsd76lejf-2137skdjf8623wsa234c3aksf",
+      productName: "Manzo beef",
+      productPrice: {
+        salePrice: "2100",
+        regularPrice: "2500",
+      },
+      productGallery: {
+        productImage: require("../images/cat&co wet/bocc-manzo400.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "cat&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "cat&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "32",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "cat-co-wet-jhf2342324876878fsasdkdfknmbsd76lejf-2137skdjf8623wsa234c3aksf",
+      productName: "pollo tachino",
+      productPrice: {
+        salePrice: "2100",
+        regularPrice: "2500",
+      },
+      productGallery: {
+        productImage: require("../images/cat&co wet/bocc-pollotacchino400.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "cat&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "cat&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "32",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "cat-co-wet-jhf23423h24872345892378fsasdkdfknmbsd76lejf-2137skdjf8623wsa234c3aksf",
+      productName: "salmon",
+      productPrice: {
+        salePrice: "2200",
+        regularPrice: "2500",
+      },
+      productGallery: {
+        productImage: require("../images/cat&co wet/bocc-salmone400.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "cat&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "cat&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "12",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "cat-co-wet-jhf23423h24872345892378fsasdkdfknmbsd76lejf-2137skdjf8623wsa234c3aksf",
+      productName: "salmon",
+      productPrice: {
+        salePrice: "2200",
+        regularPrice: "2500",
+      },
+      productGallery: {
+        productImage: require("../images/cat&co wet/bocc-salmone400.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "cat&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "cat&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "12",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "cat-co-wet-jhf23423h24872345892378fsasdkdfknmbsd76lejf-2137skdjf8623wsa234c3aksf",
+      productName: "salmon",
+      productPrice: {
+        salePrice: "2200",
+        regularPrice: "2500",
+      },
+      productGallery: {
+        productImage: require("../images/cat&co wet/bocc-salmone400.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "cat&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "cat&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "12",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "cat-co-wet-kdjakjsdkajs-2137skdjf8623wsa234c3aksf",
+      productName: "selvaggina game",
+      productPrice: {
+        salePrice: "2700",
+        regularPrice: "2500",
+      },
+      productGallery: {
+        productImage: require("../images/cat&co wet/bocc-selvaggina400.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "cat&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "cat&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "12",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "cat-co-wet-ajhsd-2137skdjf8623wsa234c3aksf",
+      productName: "coniglio e anatra",
+      productPrice: {
+        salePrice: "2800",
+        regularPrice: "2900",
+      },
+      productGallery: {
+        productImage: require("../images/cat&co wet/pate-coniglioanatra400.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "cat&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "cat&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "12",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "cat-co-wet-ajhsd-ksjhdjkashfkhj-2137skdjf8623wsa234c3aksf-2137skdjf8623wsa234c3aksf",
+      productName: "manzo beef",
+      productPrice: {
+        salePrice: "2200",
+        regularPrice: "2900",
+      },
+      productGallery: {
+        productImage: require("../images/cat&co wet/pate-manzo400.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "cat&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "cat&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "40",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "cat-co-wet-ajhsd-ksjhdjkashfkhj-2137skdjf8623wsa234c3aksf-2137skdjf8623wsa234c3aksf",
+      productName: "pollo e tachino",
+      productPrice: {
+        salePrice: "2300",
+        regularPrice: "2900",
+      },
+      productGallery: {
+        productImage: require("../images/cat&co wet/pate-pollotacc400.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "cat&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "cat&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "40",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "cat-co-wet-ajhsd-ksjhdjkamashshfkhj-kasdkj-mjhgkasdgk",
+      productName: "Tonno Tuna",
+      productPrice: {
+        salePrice: "2300",
+        regularPrice: "2900",
+      },
+      productGallery: {
+        productImage: require("../images/cat&co wet/pate-tonno400.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "cat&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "cat&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "80",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "cat-co-wet-ajhsd-ksjhdjjjkamashshfkhj-kasdkj-mjhgkasdgk",
+      productName: "Concoligio e anatra",
+      productPrice: {
+        salePrice: "2600",
+        regularPrice: "2900",
+      },
+      productGallery: {
+        productImage: require("../images/cat&co wet/cat-pate╠Ç-1.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "cat&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "cat&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "80",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "cat-co-wet-ajhsd-ksjh2345jjkamashshfkhj-kasdkj-mjhgkasdgk",
+      productName: "Con manzo beef",
+      productPrice: {
+        salePrice: "2600",
+        regularPrice: "2900",
+      },
+      productGallery: {
+        productImage: require("../images/cat&co wet/cat-pate╠Ç-2.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "cat&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "cat&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "10",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "cat-co-wet-ajhsd-iisd7q3au-kasdkj-mjhgkasdgk",
+      productName: "Con pollo e tachino chicken & turkey",
+      productPrice: {
+        salePrice: "2100",
+        regularPrice: "2900",
+      },
+      productGallery: {
+        productImage: require("../images/cat&co wet/cat-pate╠Ç-3.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "cat&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "cat&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "10",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "cat-co-wet-ajhsd-kjashrkwejrhk-kasdkj-mjhgkasdgk",
+      productName: "Con Tono Tuna",
+      productPrice: {
+        salePrice: "2100",
+        regularPrice: "2900",
+      },
+      productGallery: {
+        productImage: require("../images/cat&co wet/cat-pate╠Ç-4.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "cat&co wet",
+        subCategoryName: "wet",
+      },
+      productBrand: "cat&co",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "10",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+  ],
+  productsLength: 0,
+  error: null,
+  loading: false,
+  // viewed products, these are the products that are the user has viewed and has been cached in the browser
+  viewedProducts: [],
+};
+
+// eslint-disable-next-line import/no-anonymous-default-export
+export default function (state = initialState, action) {
+  switch (action.type) {
+    case FETCH_PRODUCTS_SUCCESS:
+      return {
+        ...state,
+        products: action.payload,
+        productsLength: action.payload.length,
+        error: null,
+        loading: false,
+      };
+    case FETCH_PRODUCTS_FAILURE:
+      return {
+        ...state,
+        error: action.payload,
+        loading: false,
+      };
+    case CLEAN_PRODUCTS:
+      return {
+        ...state,
+        products: [],
+        productsLength: 0,
+        error: null,
+        loading: false,
+      };
+    case FETCH_VIEWED_PRODUCTS_SUCCESS:
+      return {
+        ...state,
+        viewedProducts: action.payload,
+        error: null,
+        loading: false,
+      };
+    case FETCH_VIEWED_PRODUCTS_FAILURE:
+      return {
+        ...state,
+        error: action.payload,
+        loading: false,
+      };
+    case ADD_NEW_VIEWED_PRODUCT_SUCCESS:
+      const payloadData = action.payload;
+
+      // check if the payload is an array, if it is, then add the new product to the array
+      if (Array.isArray(payloadData)) {
+        // loop through the payload array and check if the product id is in the viewedProducts array
+        return payloadData.forEach((product) => {
+          if (state.viewedProducts.some((item) => item.id === product.id)) {
+            // if the product id is in the viewedProducts array, then do nothing
+          } else {
+            // if the product id is not in the viewedProducts array, then add it to the array
+            return {
+              ...state,
+              viewedProducts: [...state.viewedProducts, product],
+            };
+          }
+        });
+      }
+
+      return {
+        ...state,
+        viewedProducts: action.payload,
+        error: null,
+        loading: false,
+      };
+
+    default:
+      return state;
+  }
+}
+
+/*
+{
       id: "aklshf23480ksjd",
       productName: "ROYAL CANIN MAXI ADULT – 15KG",
       productPrice: {
@@ -1608,79 +3488,4 @@ CHICKEN`,
         ],
       },
     },
-  ],
-  productsLength: 0,
-  error: null,
-  loading: false,
-  // viewed products, these are the products that are the user has viewed and has been cached in the browser
-  viewedProducts: [],
-};
-
-// eslint-disable-next-line import/no-anonymous-default-export
-export default function (state = initialState, action) {
-  switch (action.type) {
-    case FETCH_PRODUCTS_SUCCESS:
-      return {
-        ...state,
-        products: action.payload,
-        productsLength: action.payload.length,
-        error: null,
-        loading: false,
-      };
-    case FETCH_PRODUCTS_FAILURE:
-      return {
-        ...state,
-        error: action.payload,
-        loading: false,
-      };
-    case CLEAN_PRODUCTS:
-      return {
-        ...state,
-        products: [],
-        productsLength: 0,
-        error: null,
-        loading: false,
-      };
-    case FETCH_VIEWED_PRODUCTS_SUCCESS:
-      return {
-        ...state,
-        viewedProducts: action.payload,
-        error: null,
-        loading: false,
-      };
-    case FETCH_VIEWED_PRODUCTS_FAILURE:
-      return {
-        ...state,
-        error: action.payload,
-        loading: false,
-      };
-    case ADD_NEW_VIEWED_PRODUCT_SUCCESS:
-      const payloadData = action.payload;
-
-      // check if the payload is an array, if it is, then add the new product to the array
-      if (Array.isArray(payloadData)) {
-        // loop through the payload array and check if the product id is in the viewedProducts array
-        return payloadData.forEach((product) => {
-          if (state.viewedProducts.some((item) => item.id === product.id)) {
-            // if the product id is in the viewedProducts array, then do nothing
-          } else {
-            // if the product id is not in the viewedProducts array, then add it to the array
-            return {
-              ...state,
-              viewedProducts: [...state.viewedProducts, product],
-            };
-          }
-        });
-      }
-
-      return {
-        ...state,
-        viewedProducts: action.payload,
-        error: null,
-        loading: false,
-      };
-
-    default:
-      return state;
-  }
-}
+    */
