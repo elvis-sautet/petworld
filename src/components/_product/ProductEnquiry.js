@@ -309,6 +309,7 @@ function ProductItem() {
                     // }}
                     src={productFound.productGallery.productImages[imageIndex]}
                     alt="product"
+                    loading="lazy"
                     className="lg:h-80 h-full  lg:p-6 w-full object-contain "
                   />
                 </div>
@@ -321,6 +322,7 @@ function ProductItem() {
                     {productFound.productGallery.productImages.map(
                       (image, index) => (
                         <img
+                          loading="lazy"
                           key={index}
                           src={image}
                           alt="product"

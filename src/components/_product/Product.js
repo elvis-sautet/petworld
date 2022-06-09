@@ -46,6 +46,7 @@ function Product(props) {
         <div className="bg-white relative">
           <Carousel autoplay>
             <img
+              loading="lazy"
               className="object-contain md:h-52 md:w-52 h-40 w-40 hover:scale-105 transition-all cursor-pointer ease-in-out"
               src={props.productGallery?.productImage}
               alt="this is the product_image"

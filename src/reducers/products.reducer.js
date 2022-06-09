@@ -28,7 +28,7 @@ const initialState = {
         regularPrice: "1840",
       },
       productGallery: {
-        productImage: require("../images/erics/erix active.jpg"),
+        productImage: require("../images/erics/erix active.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -81,7 +81,7 @@ const initialState = {
         regularPrice: "1840",
       },
       productGallery: {
-        productImage: require("../images/erics/erix daily chicken 3 kg.jpg"),
+        productImage: require("../images/erics/erix daily chicken 3 kg.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -134,7 +134,7 @@ const initialState = {
         regularPrice: "1840",
       },
       productGallery: {
-        productImage: require("../images/erics/erix daily chicken.jpg"),
+        productImage: require("../images/erics/erix daily chicken.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -187,7 +187,7 @@ const initialState = {
         regularPrice: "1840",
       },
       productGallery: {
-        productImage: require("../images/erics/erix daily fish.jpg"),
+        productImage: require("../images/erics/erix daily fish.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -240,7 +240,7 @@ const initialState = {
         regularPrice: "1900",
       },
       productGallery: {
-        productImage: require("../images/erics/erix daily lamb 3 kg.jpg"),
+        productImage: require("../images/erics/erix daily lamb 3 kg.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -293,7 +293,7 @@ const initialState = {
         regularPrice: "2200",
       },
       productGallery: {
-        productImage: require("../images/erics/erix daily lamb.jpg"),
+        productImage: require("../images/erics/erix daily lamb.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -346,7 +346,7 @@ const initialState = {
         regularPrice: "2200",
       },
       productGallery: {
-        productImage: require("../images/erics/erix daily puppy junior 3 kg.jpg"),
+        productImage: require("../images/erics/erix daily puppy junior 3 kg.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -399,7 +399,7 @@ const initialState = {
         regularPrice: "2000",
       },
       productGallery: {
-        productImage: require("../images/erics/erix dailyfish 3 kg.jpg"),
+        productImage: require("../images/erics/erix dailyfish 3 kg.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -444,6 +444,7 @@ const initialState = {
       },
       // product rating between 1 to 5
     },
+    // dog&co wellness
     {
       id: "dogco-wellness-kashdjashdla234uy213fsjqwsa234c3aksf",
       productName: "Wellness chicken",
@@ -452,7 +453,7 @@ const initialState = {
         regularPrice: "2000",
       },
       productGallery: {
-        productImage: require("../images/dog&co wellness/Wellness chicken.jpg"),
+        productImage: require("../images/dog&co wellness/Wellness chicken.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -505,7 +506,7 @@ const initialState = {
         regularPrice: "2000",
       },
       productGallery: {
-        productImage: require("../images/dog&co wellness/Wellness fish.jpg"),
+        productImage: require("../images/dog&co wellness/Wellness fish.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -558,7 +559,7 @@ const initialState = {
         regularPrice: "2000",
       },
       productGallery: {
-        productImage: require("../images/dog&co wellness/Wellness Lamb.jpg"),
+        productImage: require("../images/dog&co wellness/Wellness Lamb.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -611,7 +612,7 @@ const initialState = {
         regularPrice: "2000",
       },
       productGallery: {
-        productImage: require("../images/dog&co wellness/Wellness Puppy.jpg"),
+        productImage: require("../images/dog&co wellness/Wellness Puppy.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -656,15 +657,16 @@ const initialState = {
       },
       // product rating between 1 to 5
     },
+    // dog-dry
     {
-      id: "dogco-dry-kashduthAJdog-juniorKHashdla234uy68-21378623wsa234c3aksf",
+      id: "c-kashduthAJdog-juniorKHashdla234uy68-21378623wsa234c3aksf",
       productName: "dog-junior",
       productPrice: {
         salePrice: "1700",
         regularPrice: "2000",
       },
       productGallery: {
-        productImage: require("../images/dog&co dry/dog-junior.png"),
+        productImage: require("../images/dog&co dry/dog-junior.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -717,7 +719,7 @@ const initialState = {
         regularPrice: "2300",
       },
       productGallery: {
-        productImage: require("../images/dog&co dry/dog-mantenimento.png"),
+        productImage: require("../images/dog&co dry/dog-mantenimento.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -762,6 +764,7 @@ const initialState = {
       },
       // product rating between 1 to 5
     },
+    // dog&co wer
     {
       id: "dogco-dog-wet-jhfwlejf-21378623wsa234c3aksf",
       productName: "pollo tachino chicken & turkey",
@@ -770,7 +773,7 @@ const initialState = {
         regularPrice: "2500",
       },
       productGallery: {
-        productImage: require("../images/dog&co wet/dog_co-bocc-pollo_tacchino.png"),
+        productImage: require("../images/dog&co wet/dog_co-bocc-pollo_tacchino.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -823,7 +826,7 @@ const initialState = {
         regularPrice: "2500",
       },
       productGallery: {
-        productImage: require("../images/dog&co wet/dog_co-bocc-coniglio_anatra.png"),
+        productImage: require("../images/dog&co wet/dog_co-bocc-coniglio_anatra.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -876,7 +879,7 @@ const initialState = {
         regularPrice: "2500",
       },
       productGallery: {
-        productImage: require("../images/dog&co wet/dog_co-bocc-manzo.png"),
+        productImage: require("../images/dog&co wet/dog_co-bocc-manzo.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -929,7 +932,7 @@ const initialState = {
         regularPrice: "2500",
       },
       productGallery: {
-        productImage: require("../images/dog&co wet/dog-pate╠Ç-1.png"),
+        productImage: require("../images/dog&co wet/dog-pate╠Ç-1.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -982,7 +985,7 @@ const initialState = {
         regularPrice: "2500",
       },
       productGallery: {
-        productImage: require("../images/dog&co wet/dog-pate╠Ç-2.png"),
+        productImage: require("../images/dog&co wet/dog-pate╠Ç-2.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1035,7 +1038,7 @@ const initialState = {
         regularPrice: "2500",
       },
       productGallery: {
-        productImage: require("../images/dog&co wet/dog-pate╠Ç-3.png"),
+        productImage: require("../images/dog&co wet/dog-pate╠Ç-3.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1088,7 +1091,7 @@ const initialState = {
         regularPrice: "2500",
       },
       productGallery: {
-        productImage: require("../images/dog&co wet/dog-pate╠Ç-4.png"),
+        productImage: require("../images/dog&co wet/dog-pate╠Ç-4.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1141,7 +1144,7 @@ const initialState = {
         regularPrice: "2500",
       },
       productGallery: {
-        productImage: require("../images/cat&co wet/bocc-coniglioanatra400.png"),
+        productImage: require("../images/cat&co wet/bocc-coniglioanatra400.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1194,7 +1197,7 @@ const initialState = {
         regularPrice: "2500",
       },
       productGallery: {
-        productImage: require("../images/cat&co wet/bocc-manzo400.png"),
+        productImage: require("../images/cat&co wet/bocc-manzo400.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1247,7 +1250,7 @@ const initialState = {
         regularPrice: "2500",
       },
       productGallery: {
-        productImage: require("../images/cat&co wet/bocc-pollotacchino400.png"),
+        productImage: require("../images/cat&co wet/bocc-pollotacchino400.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1300,7 +1303,7 @@ const initialState = {
         regularPrice: "2500",
       },
       productGallery: {
-        productImage: require("../images/cat&co wet/bocc-salmone400.png"),
+        productImage: require("../images/cat&co wet/bocc-salmone400.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1353,7 +1356,7 @@ const initialState = {
         regularPrice: "2500",
       },
       productGallery: {
-        productImage: require("../images/cat&co wet/bocc-salmone400.png"),
+        productImage: require("../images/cat&co wet/bocc-salmone400.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1406,7 +1409,7 @@ const initialState = {
         regularPrice: "2500",
       },
       productGallery: {
-        productImage: require("../images/cat&co wet/bocc-salmone400.png"),
+        productImage: require("../images/cat&co wet/bocc-salmone400.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1459,7 +1462,7 @@ const initialState = {
         regularPrice: "2500",
       },
       productGallery: {
-        productImage: require("../images/cat&co wet/bocc-selvaggina400.png"),
+        productImage: require("../images/cat&co wet/bocc-selvaggina400.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1512,7 +1515,7 @@ const initialState = {
         regularPrice: "2900",
       },
       productGallery: {
-        productImage: require("../images/cat&co wet/pate-coniglioanatra400.png"),
+        productImage: require("../images/cat&co wet/pate-coniglioanatra400.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1565,7 +1568,7 @@ const initialState = {
         regularPrice: "2900",
       },
       productGallery: {
-        productImage: require("../images/cat&co wet/pate-manzo400.png"),
+        productImage: require("../images/cat&co wet/pate-manzo400.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1618,7 +1621,7 @@ const initialState = {
         regularPrice: "2900",
       },
       productGallery: {
-        productImage: require("../images/cat&co wet/pate-pollotacc400.png"),
+        productImage: require("../images/cat&co wet/pate-pollotacc400.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1671,7 +1674,7 @@ const initialState = {
         regularPrice: "2900",
       },
       productGallery: {
-        productImage: require("../images/cat&co wet/pate-tonno400.png"),
+        productImage: require("../images/cat&co wet/pate-tonno400.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1724,7 +1727,7 @@ const initialState = {
         regularPrice: "2900",
       },
       productGallery: {
-        productImage: require("../images/cat&co wet/cat-pate╠Ç-1.png"),
+        productImage: require("../images/cat&co wet/cat-pate╠Ç-1.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1777,7 +1780,7 @@ const initialState = {
         regularPrice: "2900",
       },
       productGallery: {
-        productImage: require("../images/cat&co wet/cat-pate╠Ç-2.png"),
+        productImage: require("../images/cat&co wet/cat-pate╠Ç-2.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1830,7 +1833,7 @@ const initialState = {
         regularPrice: "2900",
       },
       productGallery: {
-        productImage: require("../images/cat&co wet/cat-pate╠Ç-3.png"),
+        productImage: require("../images/cat&co wet/cat-pate╠Ç-3.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1883,7 +1886,7 @@ const initialState = {
         regularPrice: "2900",
       },
       productGallery: {
-        productImage: require("../images/cat&co wet/cat-pate╠Ç-4.png"),
+        productImage: require("../images/cat&co wet/cat-pate╠Ç-4.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1936,7 +1939,7 @@ const initialState = {
         regularPrice: "2900",
       },
       productGallery: {
-        productImage: require("../images/adregna/breeder super premium.jpg"),
+        productImage: require("../images/adregna/breeder super premium.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -1989,7 +1992,7 @@ const initialState = {
         regularPrice: "2100",
       },
       productGallery: {
-        productImage: require("../images/adregna/breeder-premium.png"),
+        productImage: require("../images/adregna/breeder-premium.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -2044,16 +2047,16 @@ const initialState = {
         regularPrice: "1800",
       },
       productGallery: {
-        productImage: require("../images/brit/fresh chicken with potato.jpeg"),
+        productImage: require("../images/brit/fresh chicken with potato.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
     Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
       productCategory: {
-        categoryName: "naxos",
-        subCategoryName: "naxos",
+        categoryName: "brit",
+        subCategoryName: "brit",
       },
-      productBrand: "naxos",
+      productBrand: "brit",
       // productStock is the product quantity in stock or the original quantity.
       productStock: "100",
       // quantity of items left in stock
@@ -2097,16 +2100,16 @@ const initialState = {
         regularPrice: "1800",
       },
       productGallery: {
-        productImage: require("../images/brit/fresh duck with millet.jpeg"),
+        productImage: require("../images/brit/fresh duck with millet.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
     Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
       productCategory: {
-        categoryName: "naxos",
-        subCategoryName: "naxos",
+        categoryName: "brit",
+        subCategoryName: "brit",
       },
-      productBrand: "naxos",
+      productBrand: "brit",
       // productStock is the product quantity in stock or the original quantity.
       productStock: "100",
       // quantity of items left in stock
@@ -2150,16 +2153,16 @@ const initialState = {
         regularPrice: "1800",
       },
       productGallery: {
-        productImage: require("../images/brit/juniour large breed.jpeg"),
+        productImage: require("../images/brit/juniour large breed.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
     Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
       productCategory: {
-        categoryName: "naxos",
-        subCategoryName: "naxos",
+        categoryName: "brit",
+        subCategoryName: "brit",
       },
-      productBrand: "naxos",
+      productBrand: "brit",
       // productStock is the product quantity in stock or the original quantity.
       productStock: "100",
       // quantity of items left in stock
@@ -2203,16 +2206,16 @@ const initialState = {
         regularPrice: "1800",
       },
       productGallery: {
-        productImage: require("../images/brit/premium by nature.jpeg"),
+        productImage: require("../images/brit/premium by nature.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
     Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
       productCategory: {
-        categoryName: "naxos",
-        subCategoryName: "naxos",
+        categoryName: "brit",
+        subCategoryName: "brit",
       },
-      productBrand: "naxos",
+      productBrand: "brit",
       // productStock is the product quantity in stock or the original quantity.
       productStock: "100",
       // quantity of items left in stock
@@ -2256,7 +2259,7 @@ const initialState = {
         regularPrice: "2100",
       },
       productGallery: {
-        productImage: require("../images/naxos/adult-maxi-coniglio-e-agrumi.png"),
+        productImage: require("../images/naxos/adult-maxi-coniglio-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -2309,7 +2312,7 @@ const initialState = {
         regularPrice: "2100",
       },
       productGallery: {
-        productImage: require("../images/naxos/adult-maxi-pesce-e-agrumi.png"),
+        productImage: require("../images/naxos/adult-maxi-pesce-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -2362,7 +2365,7 @@ const initialState = {
         regularPrice: "2100",
       },
       productGallery: {
-        productImage: require("../images/naxos/adult-maxi-pesce-e-agrumi.png"),
+        productImage: require("../images/naxos/adult-maxi-pesce-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -2415,7 +2418,7 @@ const initialState = {
         regularPrice: "2100",
       },
       productGallery: {
-        productImage: require("../images/naxos/adult-maxi-pollo-e-agrumi.png"),
+        productImage: require("../images/naxos/adult-maxi-pollo-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -2468,7 +2471,7 @@ const initialState = {
         regularPrice: "2100",
       },
       productGallery: {
-        productImage: require("../images/naxos/adult-medium-coniglio-e-agrumi.png"),
+        productImage: require("../images/naxos/adult-medium-coniglio-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -2521,7 +2524,7 @@ const initialState = {
         regularPrice: "2100",
       },
       productGallery: {
-        productImage: require("../images/naxos/adult-medium-maiale-e-agrumi.png"),
+        productImage: require("../images/naxos/adult-medium-maiale-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -2574,7 +2577,7 @@ const initialState = {
         regularPrice: "2100",
       },
       productGallery: {
-        productImage: require("../images/naxos/adult-medium-pesce-e-agrumi.png"),
+        productImage: require("../images/naxos/adult-medium-pesce-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -2627,7 +2630,7 @@ const initialState = {
         regularPrice: "2100",
       },
       productGallery: {
-        productImage: require("../images/naxos/adult-medium-pollo-e-agrumi.png"),
+        productImage: require("../images/naxos/adult-medium-pollo-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -2680,7 +2683,7 @@ const initialState = {
         regularPrice: "2100",
       },
       productGallery: {
-        productImage: require("../images/naxos/adult-mini-coniglio-e-agrumi.png"),
+        productImage: require("../images/naxos/adult-mini-coniglio-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -2733,7 +2736,7 @@ const initialState = {
         regularPrice: "2400",
       },
       productGallery: {
-        productImage: require("../images/naxos/adult-mini-maiale-e-agrumi.png"),
+        productImage: require("../images/naxos/adult-mini-maiale-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -2786,7 +2789,7 @@ const initialState = {
         regularPrice: "2400",
       },
       productGallery: {
-        productImage: require("../images/naxos/adult-mini-pesce-e-agrumi.png"),
+        productImage: require("../images/naxos/adult-mini-pesce-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -2839,7 +2842,7 @@ const initialState = {
         regularPrice: "2400",
       },
       productGallery: {
-        productImage: require("../images/naxos/adult-mini-pollo-e-agrumi.png"),
+        productImage: require("../images/naxos/adult-mini-pollo-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -2892,7 +2895,7 @@ const initialState = {
         regularPrice: "2400",
       },
       productGallery: {
-        productImage: require("../images/naxos/junior-maxi-pollo-e-agrumi.png"),
+        productImage: require("../images/naxos/junior-maxi-pollo-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -2945,7 +2948,7 @@ const initialState = {
         regularPrice: "2400",
       },
       productGallery: {
-        productImage: require("../images/naxos/mature-medium-maxi-pollo-e-agrumi.png"),
+        productImage: require("../images/naxos/mature-medium-maxi-pollo-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -2998,7 +3001,7 @@ const initialState = {
         regularPrice: "2400",
       },
       productGallery: {
-        productImage: require("../images/naxos/mature-mini-pollo-e-agrumi.png"),
+        productImage: require("../images/naxos/mature-mini-pollo-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -3051,7 +3054,7 @@ const initialState = {
         regularPrice: "2400",
       },
       productGallery: {
-        productImage: require("../images/naxos/puppy-maxi-pollo-e-agrumi.png"),
+        productImage: require("../images/naxos/puppy-maxi-pollo-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -3104,7 +3107,7 @@ const initialState = {
         regularPrice: "2400",
       },
       productGallery: {
-        productImage: require("../images/naxos/puppy-medium-maxi-pesce-e-agrumi.png"),
+        productImage: require("../images/naxos/puppy-medium-maxi-pesce-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -3157,7 +3160,7 @@ const initialState = {
         regularPrice: "1800",
       },
       productGallery: {
-        productImage: require("../images/naxos/puppy-mini-pollo-e-agrumi.png"),
+        productImage: require("../images/naxos/puppy-mini-pollo-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -3210,7 +3213,7 @@ const initialState = {
         regularPrice: "1800",
       },
       productGallery: {
-        productImage: require("../images/naxos/puppy-mini-pesce-e-agrumi.png"),
+        productImage: require("../images/naxos/puppy-mini-pesce-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -3263,7 +3266,7 @@ const initialState = {
         regularPrice: "1800",
       },
       productGallery: {
-        productImage: require("../images/naxos/sterilight-medium-maxi-pollo-e-agrumi.png"),
+        productImage: require("../images/naxos/sterilight-medium-maxi-pollo-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -3316,7 +3319,7 @@ const initialState = {
         regularPrice: "1800",
       },
       productGallery: {
-        productImage: require("../images/naxos/sterilight-mini-pollo-e-agrumi.png"),
+        productImage: require("../images/naxos/sterilight-mini-pollo-e-agrumi.webp"),
         productImages: [],
       },
       productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
@@ -3664,7 +3667,7 @@ With 50 years’ experience in vitamin and nutritional research, as the UK’s N
       },
       productGallery: {
         productImage:
-          "https://adragna.it/wp-content/uploads/2021/05/breeder-super-premium-2014.png",
+          "https://adragna.it/wp-content/uploads/2021/05/breeder-super-premium-2014.webp",
         productImages: [],
       },
       productDescription: `Professional Breeder Super Premium is a complete dog food, able to satisfy the different nutritional needs and tastes of dogs of all sizes and according to the various stages of life.`,
