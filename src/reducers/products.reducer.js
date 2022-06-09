@@ -1928,6 +1928,1439 @@ const initialState = {
       },
       // product rating between 1 to 5
     },
+    {
+      id: "adregna-ajhsd-asfasfasrfwerzdfsdf-kasdkj-mjkkhgkasdgk",
+      productName: "breeder super premium",
+      productPrice: {
+        salePrice: "2100",
+        regularPrice: "2900",
+      },
+      productGallery: {
+        productImage: require("../images/adregna/breeder super premium.jpg"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "adregna",
+        subCategoryName: "adregna",
+      },
+      productBrand: "adregna",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "60",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "adregna-ajhsd-sdfsaasfdfsdfwersdfsrwe-kaskkdkj-mjhgkasdgk",
+      productName: "breeder-premium",
+      productPrice: {
+        salePrice: "2300",
+        regularPrice: "2100",
+      },
+      productGallery: {
+        productImage: require("../images/adregna/breeder-premium.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "adregna",
+        subCategoryName: "adregna",
+      },
+      productBrand: "adregna",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "30",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+
+    // brit here!!
+    {
+      id: "brit-ajd3srh2sekje-ertj-41jkhgkd453231236sd-sdfsayyas,jgffdfs34jrsdfsn45zfsf9345-3skndfksjf5345rwe-kaslyyoljjkj-mjhgkasdgkskndfksjf",
+      productName: "fresh chicken with potato",
+      productPrice: {
+        salePrice: "1500",
+        regularPrice: "1800",
+      },
+      productGallery: {
+        productImage: require("../images/brit/fresh chicken with potato.jpeg"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "50",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "brit-aj09d3srh2sekje-ertj-41jkhgkd453231236sd-sdfsayyas,jgffdfs34jrsdfsn45zfsf9345-3skndfksjf5345rwe-kaslyyoljjkj-mjhgkasdgkskndfksjf",
+      productName: "fresh duck with millet",
+      productPrice: {
+        salePrice: "1600",
+        regularPrice: "1800",
+      },
+      productGallery: {
+        productImage: require("../images/brit/fresh duck with millet.jpeg"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "50",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "brit-aj09d3srh2sekje-ertj-41jkhgkd453231236sd-sdfsayyas,jgffdfs34jrsdfsn45zjksdhrsfsf9345-3skndfksjf5345rwe-kaslyyoljjkj-mjhgkasdgkskndfksjf",
+      productName: "juniour large breed",
+      productPrice: {
+        salePrice: "1100",
+        regularPrice: "1800",
+      },
+      productGallery: {
+        productImage: require("../images/brit/juniour large breed.jpeg"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "50",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "brit-premium-by-nature-ertj-41jkhgkd453231236sd-sdfsayyas,jgffdfs34jrsdfsn45zjksdhrsfsf9345-3skndfksjf5345rwe-kaslyyoljjkj-mjhgkasdgkskndfksjf",
+      productName: "premium by nature",
+      productPrice: {
+        salePrice: "900",
+        regularPrice: "1800",
+      },
+      productGallery: {
+        productImage: require("../images/brit/premium by nature.jpeg"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "50",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajhsd-sdfsaasfdfsdfwejjrsdfsrwe-kaskkdkj-mjhgkasdgk",
+      productName: "adult maxi coniglio-e-agrumi",
+      productPrice: {
+        salePrice: "2300",
+        regularPrice: "2100",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/adult-maxi-coniglio-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "40",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajhsd-sdfsaas,jgffdfsdfwejjrsdfsrwe-kaskkdkj-mjhgkasdgk",
+      productName: "adult maxi-pesce-e-agrumi",
+      productPrice: {
+        salePrice: "2200",
+        regularPrice: "2100",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/adult-maxi-pesce-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "20",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajhsd-sdfsaas,jgffdfsdfwejjrsdfsnnrwe-kaskkdkj-mjhgkasdgk",
+      productName: "adult maxi-pesce-e-agrumi",
+      productPrice: {
+        salePrice: "2200",
+        regularPrice: "2100",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/adult-maxi-pesce-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "60",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajhsd-sdfsaas,jgffdfsdfwejjrsdfsnnrwe-kaskkdjjkj-mjhgkasdgk",
+      productName: "adult maxi pollo-e-agrumi",
+      productPrice: {
+        salePrice: "2200",
+        regularPrice: "2100",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/adult-maxi-pollo-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "40",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajhsd-sdfsaas,jgffdfsdfwejjrsdfsnnrwe-kaskjkkdjjkj-mjhgkasdgk",
+      productName: "adult-medium-coniglio-e-agrumi",
+      productPrice: {
+        salePrice: "2200",
+        regularPrice: "2100",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/adult-medium-coniglio-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "40",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajh2sd-sdfsaas,jgffdfsdfwejjrsdfsnnrwe-kasloljjkj-mjhgkasdgk",
+      productName: "adult medium coniglio-e-agrumiadult-medium-maiale-e-agrumi",
+      productPrice: {
+        salePrice: "1900",
+        regularPrice: "2100",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/adult-medium-maiale-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "10",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajh2sd-sdfsaas,jgffdfsdfwejjrsdfsnnsdfrwe-kasloljjkj-mjhgkasdgk",
+      productName: "adult medium pesce-e-agrumi",
+      productPrice: {
+        salePrice: "1900",
+        regularPrice: "2100",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/adult-medium-pesce-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "10",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajh2sd-sdfsaas,jgffdfs34jrsdfsnnsdfrwe-kasloljjkj-mjhgkasdgk",
+      productName: "adult medium pollo-e-agrumi",
+      productPrice: {
+        salePrice: "1900",
+        regularPrice: "2100",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/adult-medium-pollo-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "10",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajh256sd-sdfsaas,jgffdfs34jrsdfsnnsdfrwe-kasloljjkj-mjhgkasdgk",
+      productName: "adult mini coniglio-e-agrumi",
+      productPrice: {
+        salePrice: "2000",
+        regularPrice: "2100",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/adult-mini-coniglio-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "10",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajh256sd-sdfsaas,jgffdfs34jrsdfsnnsdfrwe-kaslyyoljjkj-mjhgkasdgk",
+      productName: "adult mini maiale-e-agrumi",
+      productPrice: {
+        salePrice: "2200",
+        regularPrice: "2400",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/adult-mini-maiale-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "10",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajd3h2456sd-sdfsaas,jgffdfs34jrsdfsnnsdfrwe-kaslyyoljjkj-mjhgkasdgk",
+      productName: "adult mini pesce-e-agrumi",
+      productPrice: {
+        salePrice: "2200",
+        regularPrice: "2400",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/adult-mini-pesce-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "10",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajd3h2456sd-sdfsayyas,jgffdfs34jrsdfsnnsdfrwe-kaslyyoljjkj-mjhgkasdgk",
+      productName: "adult mini pollo-e-agrumi",
+      productPrice: {
+        salePrice: "2000",
+        regularPrice: "2400",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/adult-mini-pollo-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "10",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajd3h24543536sd-sdfsayyas,jgffdfs34jrsdfsnnsdfrwe-kaslyyoljjkj-mjhgkasdgk",
+      productName: "junior maxi pollo-e-agrumi",
+      productPrice: {
+        salePrice: "2100",
+        regularPrice: "2400",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/junior-maxi-pollo-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "10",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajd3h241231236sd-sdfsayyas,jgffdfs34jrsdfsnnsdfrwe-kaslyyoljjkjsdf-mjhgkasdgk",
+      productName: "mature medium maxi pollo-e-agrumi",
+      productPrice: {
+        salePrice: "1800",
+        regularPrice: "2400",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/mature-medium-maxi-pollo-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "50",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajd3h241231236sd-sdfsayyas,jgffdfs34jrsdfsn45345-35345rwe-kaslyyoljjkj-mjhgkasdgk",
+      productName: "mature mini pollo-e-agrumi",
+      productPrice: {
+        salePrice: "1400",
+        regularPrice: "2400",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/mature-mini-pollo-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "50",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajd3h241231236sd-sdfsayyas,jgffdfs34jrsdfsn459345-35345rwe-kaslasdasdyyoljjkj-mjhgkasdgk",
+      productName: "puppy maxi pollo-e-agrumi",
+      productPrice: {
+        salePrice: "1600",
+        regularPrice: "2400",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/puppy-maxi-pollo-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "50",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajd3h241231236sd-sdfsayyas,jgffdfs34jrsdfsn459345-3skndfksjf5345rwe-kaslyyoljjkj-mjhgkasdgk",
+      productName: "puppy medium maxi pesce-e-agrumi",
+      productPrice: {
+        salePrice: "1600",
+        regularPrice: "2400",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/puppy-medium-maxi-pesce-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "50",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajd3h241231236sd-sdfsayyas,jgffdfs34jrsdfsn459345-3skndfksjf5345rwe-kaslyyoljjkj-mjhgkasdgk-djfksjdhfksjdhfs",
+      productName: "puppy mini pollo e-agrumi",
+      productPrice: {
+        salePrice: "1800",
+        regularPrice: "1800",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/puppy-mini-pollo-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "70",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajd3h241231236sd-sdfsayyas,jgffdfs34jrsdfsn45zfsf9345-3skndfksjf5345rwe-kaslyyoljjkj-mjhgkasdgkskndfksjf",
+      productName: "puppy mini pesce-e-agrumi",
+      productPrice: {
+        salePrice: "1600",
+        regularPrice: "1800",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/puppy-mini-pesce-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "70",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajd3h241jkhgkd453231236sd-sdfsayyas,jgffdfs34jrsdfsn45zfsf9345-3skndfksjf5345rwe-kaslyyoljjkj-mjhgkasdgkskndfksjf",
+      productName: "sterilight medium maxi pollo-e-agrumi",
+      productPrice: {
+        salePrice: "1600",
+        regularPrice: "1800",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/sterilight-medium-maxi-pollo-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "50",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
+    {
+      id: "naxos-ajd3h2sekje-ertj-41jkhgkd453231236sd-sdfsayyas,jgffdfs34jrsdfsn45zfsf9345-3skndfksjf5345rwe-kaslyyoljjkj-mjhgkasdgkskndfksjf",
+      productName: "sterilight mini pollo-e-agrumi",
+      productPrice: {
+        salePrice: "1600",
+        regularPrice: "1800",
+      },
+      productGallery: {
+        productImage: require("../images/naxos/sterilight-mini-pollo-e-agrumi.png"),
+        productImages: [],
+      },
+      productDescription: `Ingredients: Processed Animal Protein, Wheat, Corn, Animal Fat, Corn. Gluten, Rice, Liver Aroma, Salt, Flaxseed, Dried Brewer’s Yeast, Taurine, MOS (Mannan Oligo Saccharides), Beta-Glucan, Yucca, Quillaja.
+    Minerals: Calcium, Phosphorus, Sodium, Iodine, Zinc, Copper, Potassium Chloride, Iron, Selenium.`,
+      productCategory: {
+        categoryName: "naxos",
+        subCategoryName: "naxos",
+      },
+      productBrand: "naxos",
+      // productStock is the product quantity in stock or the original quantity.
+      productStock: "100",
+      // quantity of items left in stock
+      productsLeftInStock: "50",
+      productDetails: {
+        productReviews: [
+          {
+            reviewId: uuidv4(),
+            fullName: "John Doe",
+            review: "This is a review",
+            rating: "5",
+            date: "2020-01-01",
+          },
+        ],
+        productSpecifications: [
+          {
+            specificationId: uuidv4(),
+            specificationName: "Weight",
+            specificationValue: "2kg",
+          },
+          {
+            specificationId: uuidv4(),
+            specificationName: "Size",
+            specificationValue: "2kg",
+          },
+        ],
+        productLikes: [
+          {
+            likeId: uuidv4(),
+            fullName: "John Doe",
+          },
+        ],
+      },
+      // product rating between 1 to 5
+    },
   ],
   productsLength: 0,
   error: null,
