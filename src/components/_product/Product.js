@@ -46,7 +46,7 @@ function Product(props) {
         <div className="bg-white relative">
           <Carousel autoplay>
             <img
-              className="object-contain h-40 w-40 hover:scale-105 transition-all cursor-pointer ease-in-out"
+              className="object-contain md:h-52 md:w-52 h-40 w-40 hover:scale-105 transition-all cursor-pointer ease-in-out"
               src={props.productGallery?.productImage}
               alt="this is the product_image"
             />
@@ -64,7 +64,7 @@ function Product(props) {
             ))}
         </div>
         {/* TODO:change the id */}
-        <p className="text-black line-clamp-1 text-[16px]  tracking-wide mt-1">
+        <p className="text-black line-clamp-1 text-[16px]  tracking-wide mt-1 capitalize">
           {props.productName}
         </p>
         <div className="mt-2 text-xs md:text-[14px] text-black font-semibold ">

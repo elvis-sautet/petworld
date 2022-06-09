@@ -19,6 +19,7 @@ import YouMayAlsoLike from "./you-may-also-like";
 import { LOCAL_STORAGE_CACHED_DATABASE } from "../../reducers/products.reducer";
 import { Menu, Popover, Transition } from "@headlessui/react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { Image } from "antd";
 
 function ProductItem() {
   const dispatch = useDispatch();
@@ -297,6 +298,15 @@ function ProductItem() {
               <div className="flex py-6 h-full w-full">
                 <div className="flex w-full  flex-grow p-3 h-72 lg:h-96 border border-gray-300 rounded-md">
                   <img
+                    // prevent s
+                    // width="100%"
+                    // height="100%"
+                    // objectFit="contain"
+                    // style={{
+                    //   objectFit: "contain",
+                    //   objectPosition: "center",
+                    //   position: "relative",
+                    // }}
                     src={productFound.productGallery.productImages[imageIndex]}
                     alt="product"
                     className="lg:h-80 h-full  lg:p-6 w-full object-contain "
@@ -557,14 +567,14 @@ function ProductItem() {
                     <Icon icon="bytesize:tag" />
                     <span className="inline-block">Categories</span>
                   </p>
-                  {/* {productFound.productTags.map((tag, index) => (
-                <span
-                  key={index}
-                  className="inline-block hover:text-fountain-blue cursor-pointer text-sm capitalize px-2 py-.5 border border-gray-300 rounded-sm text-gray-500 mr-2"
-                >
-                  {tag}
-                </span>
-              ))} */}
+                  {/* {productFound.productTags.map((tag, index) => ( */}
+                  <span
+                    // key={index}
+                    className="inline-block hover:text-fountain-blue cursor-pointer text-sm capitalize px-2 py-.5 border border-gray-300 rounded-sm text-gray-500 mr-2"
+                  >
+                    {productFound.productCategory.categoryName}
+                  </span>
+                  {/* ))} */}
                 </div>
               </div>
             </div>
