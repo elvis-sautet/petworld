@@ -297,17 +297,20 @@ function ProductItem() {
             <div className="lg:flex lg:flex-row-reverse lg:place-content-start lg:col-span-2 gap-3 p-3 ">
               <div className="flex py-6 h-full w-full">
                 <div className="flex w-full  flex-grow p-3 h-72 lg:h-96 border border-gray-300 rounded-md">
-                  <Image.PreviewGroup>
-                    <Image
-                      // prevent show the click to prevew
-
-                      src={
-                        productFound.productGallery.productImages[imageIndex]
-                      }
-                      alt="product"
-                      className="lg:h-80 h-full  lg:p-6 w-full object-contain "
-                    />
-                  </Image.PreviewGroup>
+                  <img
+                    // prevent s
+                    // width="100%"
+                    // height="100%"
+                    // objectFit="contain"
+                    // style={{
+                    //   objectFit: "contain",
+                    //   objectPosition: "center",
+                    //   position: "relative",
+                    // }}
+                    src={productFound.productGallery.productImages[imageIndex]}
+                    alt="product"
+                    className="lg:h-80 h-full  lg:p-6 w-full object-contain "
+                  />
                 </div>
               </div>
 
